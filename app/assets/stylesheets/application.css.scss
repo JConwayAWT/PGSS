@@ -1,0 +1,88 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require jquery-tablesorter/theme.bootstrap
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#no-border-radius{
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.blue-navbar{
+  background-color: #000099;
+  border: none;
+}
+
+#body-container{
+  a{
+    &:hover{
+      background-color: transparent;
+    }
+  }
+
+  min-height: 72%;
+}
+
+.black-caption-overlay{
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
+  height: 30%;
+  top: 70%;
+}
+
+#footer{
+  margin-top: 40px;
+  min-height: 50px;
+  border-top: thin solid #cccccc;
+  .soft-gray-text{
+    color: #969696;
+  }
+  .small-text{
+    font-size: 11px;
+  }
+  .text-padded-top{
+    padding-top: 8px;
+  }
+}
+
+.white-header-link{
+  color: white;
+}
+
+.caret-medium {
+  display: inline-block;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #FFFFFF;
+  margin-left: 8px;
+}
+
+.no-click-color-change{
+  background-color: transparent !important;
+}
+
+html, body{
+  height: 100%;
+}
+

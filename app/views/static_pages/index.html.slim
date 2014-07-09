@@ -1,0 +1,47 @@
+h2.text-center
+  b Pennsylvania Governor's School for the Sciences
+
+div align="center"
+  #carousel-example-generic.carousel.slide data-ride="carousel" style="width: 720px"
+    /! Indicators
+    ol.carousel-indicators
+      li.active data-slide-to="0" data-target="#index-carousel"
+      li data-slide-to="1" data-target="#index-carousel"
+      li data-slide-to="2" data-target="#index-carousel"
+    /! Wrapper for slides
+    .carousel-inner
+      .item.active
+        = image_tag "index-computer-lab.jpg", size: "720x360"
+        .carousel-caption
+          h3
+            b Programming Lab
+        .black-caption-overlay
+      .item
+        = image_tag "index-physics-lab.jpg", size: "720x360"
+        .carousel-caption
+          h3
+            b Physics Lab
+        .black-caption-overlay
+      .item
+        = image_tag "index-guest-speaker.jpg", size: "720x360"
+        .carousel-caption
+          h3
+            b Guest Speakers
+        .black-caption-overlay
+    a.left.carousel-control data-slide="prev" href="#carousel-example-generic" role="button" 
+      span.glyphicon.glyphicon-chevron-left
+    a.right.carousel-control data-slide="next" href="#carousel-example-generic" role="button" 
+      span.glyphicon.glyphicon-chevron-right
+
+  h3 Proudly hosted by Carnegie Mellon University
+
+br
+
+.row
+  .col-md-10.col-md-offset-1
+    p The Pennsylvania Governor's School for the Sciences (PGSS) was established in order to provide a summer enrichment experience in the sciences and mathematics for talented Pennsylvania high school students and to encourage them to pursue careers in the fields of science, technology, engineering or mathematics. The program provides instruction in biological sciences, chemistry, physics, mathematics, and computer science, with emphasis on collaborative learning and team research.
+
+    p We gratefully acknowledge our co-sponsor, #{link_to "PGSS Campaign, Inc.", "http://www.pgsscampaign.org"}, alumni and friends of the Pennsylvania Governor's School for the Sciences who have generously provided funds to match the grant from the Pennsylvania Department of Education, making this year's PGSS program possible.  We also appreciate the support and assistance of the #{link_to "Mellon College of Science", "http://www.cmu.edu/mcs/"} and #{link_to "Carngie Mellon University", "http://www.cmu.edu"}, both of whom have worked with the program since its inception in 1982.
+
+    p PGSS is an Institutional Member of the #{link_to "National Conference of Governor's Schools", "http://www.ncogs.org/"}.
+
