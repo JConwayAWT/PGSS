@@ -15,4 +15,13 @@ class StaticPagesController < ApplicationController
   def how_to_apply
   end
 
+  def applicant_faq
+  end
+
+  def accepted_faq
+  end
+
+  def parent_faq
+  end
+
 end

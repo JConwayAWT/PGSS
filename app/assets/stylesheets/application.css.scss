@@ -28,6 +28,9 @@
 .blue-navbar{
   background-color: #000099;
   border: none;
+  .white-right-border{
+    border-right: thin solid white;
+  }
 }
 
 #body-container{
@@ -35,6 +38,10 @@
     &:hover{
       background-color: transparent;
     }
+  }
+
+  .panel-default{
+    margin-bottom: 5px;
   }
 
   min-height: 72%;
@@ -73,9 +80,9 @@
 
 .caret-medium {
   display: inline-block;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid #FFFFFF;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #FFFFFF;
   margin-left: 8px;
 }
 

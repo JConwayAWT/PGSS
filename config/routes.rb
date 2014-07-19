@@ -6,10 +6,17 @@ Rails.application.routes.draw do
   root 'static_pages#index'
 
   match '/index', to: "static_pages#index", via: :get
+
   match '/program_overview', to: "static_pages#program_overview", via: :get
   match '/selection_process', to: "static_pages#selection_process", via: :get
   match '/costs_and_commitment', to: "static_pages#costs_and_commitment", via: :get
   match '/how_to_apply', to: "static_pages#how_to_apply", via: :get
+
+  match '/counselor_description', to: "static_pages#counselor_description", via: :get
+
+  match '/applicant_faq', to: "static_pages#applicant_faq", via: :get
+  match '/accepted_faq', to: "static_pages#accepted_faq", via: :get
+  match '/parent_faq', to: "static_pages#parent_faq", via: :get
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
