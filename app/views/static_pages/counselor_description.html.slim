@@ -7,6 +7,36 @@
   .col-md-10.col-md-offset-1
     p As a PGSS teaching assistant/counselor, you will interact more closely and spend more time with the PGSS student participants than anyone else associated with the program.  You will be required to devote much time and energy to a variety of activities, from classes and labs during the day to social activities and homework assistance at night. You will help to shepherd some of the most talented students of science and math from the Commonwealth of Pennsylvania through one of their most important periods of social, emotional and intellectual development.  By the end of the program, you will not regret the investment of time that you have made.  In fact, many former TAs and counselors consider their time with PGSS to be among the most fulfilling experiences of their lives.
 
-    p <i>This is a placeholder for a Q&A section in accordion format</i>
-
     p For any inquiries related to employment at PGSS, please do not hesitate to send questions to #{link_to "our help address", "mailto:pgss@cmu.edu"}.
+
+- index = 0
+
+.row
+  .col-md-10.col-md-offset-1
+    #accordion.panel-group
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
+            | Is the CMU campus a safe place for students? (Placeholder only!)
+            - index += 1
+      .panel-collapse.collapse
+        .panel-body
+          .row
+            .col-md-12
+              p Yes.  You can view campus safety information #{link_to "here", "http://www.cmu.edu/police/"}.  Due to PGSS's buddy system, zone system, TA monitoring, live-in dormitory, and CMU's campus police, the program has a consistently excellent safety record.  With the exception of a few small items taken from public spaces, PGSS has had a perfect safety record since it was reinstated in 2013.
+
+/ wish i had known:
+// knew she was TAing for team project/lab/electives/core course
+// that you can cook for yourself if you bring stuff
+// that work goes from 8am until midnight or 1am on weekends
+// how important it is to memorize names
+
+
+javascript:
+  $(document).ready(function(){
+    $.each($(".panel-collapse"), function(index, value){
+      $(value).attr("id","collapse" + index.toString());
+      index += 1;
+    });
+  });

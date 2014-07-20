@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :alums
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -17,6 +19,8 @@ Rails.application.routes.draw do
   match '/applicant_faq', to: "static_pages#applicant_faq", via: :get
   match '/accepted_faq', to: "static_pages#accepted_faq", via: :get
   match '/parent_faq', to: "static_pages#parent_faq", via: :get
+
+  match '/find_by_iu', to: "static_pages#find_by_iu", via: :get
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

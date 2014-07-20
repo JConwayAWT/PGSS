@@ -1,0 +1,29 @@
+h1 Listing alums
+table.table.table-bordered.table-striped.tablesorter-blue#alumni-table
+  thead
+    tr
+      th data-placeholder="Ex: Joe" First name
+      th data-placeholder="Ex: Smith" Last name
+      th data-placeholder="Ex: Clark" Current last name
+      th data-placeholder="Ex: Fox" High school
+      th data-placeholder="Ex: 1998 to 2000" Pgss year
+      th data-placeholder="Ex: Phila" City
+      th data-placeholder="Ex: jsmith" Email
+      th data-placeholder="Ex: 20" IU
+  tbody
+    - @alums.each do |alum|
+      tr
+        td= alum.first_name
+        td= alum.last_name
+        td= alum.current_last_name
+        td= alum.high_school
+        td= alum.pgss_year
+        td= alum.city
+        td= alum.email
+        td= alum.iu
+
+javascript:
+  $(document).ready(function(){
+    // Make sure to change this if PGSS year is no longer the fifth column
+    $($("input[data-column='4']")[0]).css("width","102%")
+  });

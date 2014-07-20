@@ -15,7 +15,8 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
-//= require jquery-tablesorter
+//= require jquery.tablesorter
+//= require jquery.tablesorter.widgets
 
 $(document).ready(function(){
     $('.carousel').each(function(){

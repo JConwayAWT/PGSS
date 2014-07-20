@@ -24,4 +24,7 @@ class StaticPagesController < ApplicationController
   def parent_faq
   end
 
+  def find_by_iu
+  end
+
 end

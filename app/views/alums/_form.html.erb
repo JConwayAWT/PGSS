@@ -1,0 +1,49 @@
+<%= form_for(@alum) do |f| %>
+  <% if @alum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@alum.errors.count, "error") %> prohibited this alum from being saved:</h2>
+
+      <ul>
+      <% @alum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :current_last_name %><br>
+    <%= f.text_field :current_last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :high_school %><br>
+    <%= f.text_field :high_school %>
+  </div>
+  <div class="field">
+    <%= f.label :pgss_year %><br>
+    <%= f.number_field :pgss_year %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :iu %><br>
+    <%= f.number_field :iu %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
