@@ -1,19 +1,145 @@
+- index = 0
+
 .row
   .col-md-12
     .text-center
-      h1 Applicant FAQ
+      h1 Accepted Student FAQ
 
 .row
   .col-md-10.col-md-offset-1
-    | For the moment, this is just a list of questions that students might have been interested in as they were applying.
-    ul
-      li Should I text my student every hour on the hour?
-      li Is the CMU campus a safe place for students?
-      li Are kids being supervised at all times?
-      li How does the dining plan work?
-      li What happens if kids get sick or have a medical emergency?
-      li Can I come pick my kid up at any time?
-      li Am I required to come for parents weekend?
-      li Do student have access to athletic, musical, and artistic facilities?
-      li What kinds of things do kids do during their free time? (mention the big and small activities)
-      li Do students have a curfew?
+    #accordion.panel-group
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
+            | Is the CMU campus a safe place for students?
+            - index += 1
+      .panel-collapse.collapse
+        .panel-body
+          .row
+            .col-md-12
+              p Yes.  You can view campus safety information #{link_to "here", "http://www.cmu.edu/police/"}.  Due to PGSS's buddy system, zone system, TA monitoring, live-in dormitory, and CMU's campus police, the program has a consistently excellent safety record.  With the exception of a few small items taken from public spaces, PGSS has had a perfect safety record since it was reinstated in 2013.
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
+            | Are the students being supervised at all times?
+            - index += 1
+      .panel-collapse.collapse
+        .panel-body
+          .row
+            .col-md-12
+              p In a loose sense of the word "supervised," yes.  Much of the day is filled by classes, labs, team project, and other organized activities, and there will always be at least one TA present.  Students must stay on the PGSS campus at all times unless they specifically notify the PGSS front desk otherwise.  Even in that case, students are <b>never</b> allowed to leave the campus alone.  Students are also required to sign in at the front desk every night they are in residence, and therefore all students will be accounted for by 11:30PM (or 12:30AM on weekends) daily.  After sign in, students may not leave the dorm for any reason until 6:00AM.  The front desk is staffed by a TA every evening, and multiple TAs will be available in the dormitory to lead the social program, provide homework help, or assist with any other student needs.
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
+            | Should I check in with my child multiple times per day/per hour/per minute?
+            - index += 1
+      .panel-collapse.collapse
+        .panel-body
+          .row
+            .col-md-12
+              p Don't worry!  PGSS has a wonderful safety record, and we take great care to protect your student and make this one of the most memorable, enjoyable, and rewarding experiences of their young life.  Additionally, PGSS students are kept extremely busy between the five core components of the program, social time with their friends, and the organized social program set by the residence life staff.  Excessive checking on students may prove to be a hindrance to their academic or social experience.
+
+              p You can view your student's acceptance to PGSS as a vote of confidence not only in their academic ability, but also their maturity and preparedness for growth.  Trust that your student will grow, and we guarantee that you will be proud of the changes you see in them by end of the program.
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
+            | How does the dining plan work?
+            - index += 1
+      .panel-collapse.collapse
+        .panel-body
+          .row
+            .col-md-12
+              p Meal costs are covered by the PGSS scholarship.  This includes 19 meals per week -- three for each school day and two for each weekend day.  Seventeen of these meal credits must be used at Resnik Hall, CMU's main dining facility during the summer, and two credits can be used at smaller dining facilities throughout the campus.  Only one meal credit can be used during each meal time block, which protects students from losing excessive value from their card even if it is lost or stolen.
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
+            | What happens if a student is sick, injured, or has a medical emergency?
+            - index += 1
+      .panel-collapse.collapse
+        .panel-body
+          .row
+            .col-md-12
+              p Sick students are given appropriate leave from academic activities, although they will still be required to complete any work that was assigned during the periods in which they were absent. Students will be given the option of going to CMU's medical service center, and will be escorted by at least one TA if they wish to do so.
+
+              p In the case of injury, paramedics will be called to evaluate the student wherever they are.  If the paramedics decide that hospitalization is necessary, or the student decides they would like to be taken to the hospital, they will be transported via ambulance to a UPMC hospital.  There may be costs associated with this depending on your insurance plan.  If an injury or sickness is serious enough to require hospitalization, parents and/or guardians will be contacted immediately.
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
+            | Can I come pick up my student at any time?
+            - index += 1
+      .panel-collapse.collapse
+        .panel-body
+          .row
+            .col-md-12
+              p No.  This is in violation of a number of program policies.  Students are not allowed to enter any private vehicle during their time in residence at PGSS (except in the case of medical emergencies), including those of their parents or guardians.  Futhermore, students must return to the dormitory by the stated curfew every night throughout the program without exception.  While parents are allowed to send or drop off necessary items, students can not leave the campus with their parents except during Parents Weekend.
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
+            | Am I required to come for Parents Weekend?
+            - index += 1
+      .panel-collapse.collapse
+        .panel-body
+          .row
+            .col-md-12
+              p No.  While many students do enjoy seeing their parents on this special weekend, we understand that not all parents can make time for more than ten hours of driving in a single weekend, let alone three weekends (for drop-off, Parents Weekend, and pick-up).  Parents are also allowed to sign or send in a release form during the program to allow other adults to act as their student's guardian during Parents Weekend if they wish.
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
+            | Do students have access to atheltic and musical facilities?
+            - index += 1
+      .panel-collapse.collapse
+        .panel-body
+          .row
+            .col-md-12
+              p Yes. Students are allowed to use Carnegie Mellon's atheltic facilities, which includes a number of gyms, fields, courts, and more.  While the College of Fine Arts does not allowed students to use its practice rooms, the program's dormitory for the last two years included two sound-proof piano rooms.  Students are free to bring their instruments to these rooms and practice during their free time.
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
+            | What kinds of things do kids do during their free?
+            - index += 1
+      .panel-collapse.collapse
+        .panel-body
+          .row
+            .col-md-12
+              p Mostly homework.
+
+              p However, students will eventually adjust to the challenging work load of the program and find themselves with a fair amount of free time.  The residence life staff organizes a daily activity for the students, ranging from s'mores around a bonfire, to square dancing, to trips to Kennywood Park, to paper airplane competitions, to talent shows, and many more.  These activities are usually well-attended and provide a wealth of shared experiences to aid in developing relationships during this incredible opportunity.
+
+              p Students are also free to pursue activities of their own and take advantage of the ability to do so often.  Students can explore neighboring areas of Pittsburgh with classmates or TAs, perhaps for dinner at a restaurant on nearby Craig Street.  They organize games of soccer, basketball, badminton, ultimate Frisbee, and more.  Some practice instruments, dance, go to the gym, or go for a run through Schenley Park with friends.  Whatever happens, you can trust that at a camp full of motivated, talented teenagers, any available free time will be put to great use.
+
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
+            | Do students have a curfew?
+            - index += 1
+      .panel-collapse.collapse
+        .panel-body
+          .row
+            .col-md-12
+              p Yes, and the curfew is enforced for the entire duration of the camp, including the first day.  Students must sign in to the dorm at 11:30PM on school days and 12:30AM otherwise.  Students must return to their gender-separated sides of the dorm 30 minutes after curfew.  While no specific lights out time is enforced, students typically do not need to be reminded to sleep at a reasonable hour.
+
+javascript:
+  $(document).ready(function(){
+    $.each($(".panel-collapse"), function(index, value){
+      $(value).attr("id","collapse" + index.toString());
+      index += 1;
+    });
+  });
