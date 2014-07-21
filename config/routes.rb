@@ -22,6 +22,8 @@ Rails.application.routes.draw do
 
   match '/find_by_iu', to: "static_pages#find_by_iu", via: :get
 
+  match '/create_alumni', to: "alums#create_alumni", via: :get
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

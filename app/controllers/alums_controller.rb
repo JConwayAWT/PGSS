@@ -7,6 +7,30 @@ class AlumsController < ApplicationController
     @alums = Alum.all
   end
 
+  def create_alumni
+    f = File.open("app/controllers/alumni.csv")
+    f.readlines.each do |line|
+      begin
+        data = line.split(",")
+        a = Alum.new
+        a.pgss_year = data[0].to_i
+        a.first_name = data[1].gsub('"','')
+        a.last_name = data[2].gsub('"','')
+        a.current_last_name = data[3]
+        a.city = data[4]
+        a.state = data[5]
+        a.high_school = data[6]
+        a.iu = data[7].to_i
+        a.hometown = data[8].chomp
+        a.save!
+      rescue
+        debugger
+        puts 'db'
+      end
+    end
+    render text: "ok"
+  end
+
   # # GET /alums/1
   # # GET /alums/1.json
   # def show
