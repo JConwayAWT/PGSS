@@ -10,12 +10,14 @@ html
       .container-fluid style="height:70px; padding-top:10px;"
         .navbar-header
           .navbar-brand
-            a href="/" style="color:white; font-size:40px; text-decoration: none;" PGSS
+            a href="/" style="color:white; font-size:40px; text-decoration: none; background-color: transparent" PGSS
           ul.nav.navbar-nav.navbar-left
             li
               = image_tag "pgss_logo_slim.png", style: "height: 40px;"
 
         ul.nav.navbar-nav.navbar-right style="padding-right: 25px;"
+          li.active
+            a href="/alumni" style="background-color: transparent; border-right: thin solid white" Alumni
           li.dropdown
             a.dropdown-toggle.no-click-color-change.white-right-border data-toggle="dropdown" href="#"
               .white-header-link
