@@ -1,4 +1,14 @@
-h1 Listing alums
+.row
+  .col-md-12
+    .text-center
+      h2 Alumni Database
+
+.row
+  .col-md-8.col-md-offset-2
+    .text-center
+      p Click to sort by any single column, or hold shift while clicking to sort by multiple columns.  You can also use the examples in the text boxes below the column headings to filter alumni by any criteria you wish.  
+
+      p If you would like to reconnect with a classmate, please #{link_to "contact the PGSS Alumni Association", "mailto:janet.hurwitz@pgssalumni.org"} to request their most recent contact information.
 table.table.table-bordered.table-striped.tablesorter-blue#alumni-table
   thead
     tr
@@ -8,7 +18,7 @@ table.table.table-bordered.table-striped.tablesorter-blue#alumni-table
       th data-placeholder="Ex: Fox" High school
       th data-placeholder="Ex: 1998 to 2000" Pgss year
       th data-placeholder="Ex: Phila" City
-      th data-placeholder="Ex: jsmith" Email
+      th data-placeholder="Ex: PA" State
       th data-placeholder="Ex: 20" IU
   tbody
     - @alums.each do |alum|
@@ -19,7 +29,7 @@ table.table.table-bordered.table-striped.tablesorter-blue#alumni-table
         td= alum.high_school
         td= alum.pgss_year
         td= alum.city
-        td= alum.email
+        td= alum.state
         td= alum.iu
 
 javascript:

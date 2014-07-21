@@ -16,10 +16,10 @@ class AlumsController < ApplicationController
         a.pgss_year = data[0].to_i
         a.first_name = data[1].gsub('"','')
         a.last_name = data[2].gsub('"','')
-        a.current_last_name = data[3]
+        a.current_last_name = data[3].gsub('"','')
         a.city = data[4]
         a.state = data[5]
-        a.high_school = data[6]
+        a.high_school = data[6].gsub('"','')
         a.iu = data[7].to_i
         a.hometown = data[8].chomp
         a.save!
