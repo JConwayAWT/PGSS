@@ -9,7 +9,14 @@
       p Click to sort by any single column, or hold shift while clicking to sort by multiple columns.  You can also use the examples in the text boxes below the column headings to filter alumni by any criteria you wish.  
 
       p If you would like to reconnect with a classmate, please #{link_to "contact the PGSS Alumni Association", "mailto:janet.hurwitz@pgssalumni.org"} to request their most recent contact information.
-table.table.table-bordered.table-striped.tablesorter-blue#alumni-table
+
+.row#database-loading
+  .col-md-12
+    .text-center
+      h3 Database loading
+      img src="assets/database-loading.gif"
+
+table.table.table-bordered.table-striped.tablesorter-blue#alumni-table style="display:none"
   thead
     tr
       th data-placeholder="Ex: Joe" First name

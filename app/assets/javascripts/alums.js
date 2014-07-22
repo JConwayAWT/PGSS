@@ -1,13 +1,12 @@
-$(function(){
-  initPage();
-});
-$(window).bind('page:change', function(){
-  initPage();
-});
+$(document).ready(function(){
 
-function initPage(){
+  $("#database-loading").text($("#database-loading").text() + ".");
   $("#alumni-table").tablesorter({
     sortList: [[1, 0]],
     widgets: ["zebra","filter"]
   });
-}
+
+  $("#database-loading").toggle();
+  $("#alumni-table").toggle();
+
+});
