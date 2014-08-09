@@ -7,6 +7,10 @@ class AlumsController < ApplicationController
     @alums = Alum.all
   end
 
+  def filter_by_iu
+    @alums = Alum.where(iu: params[:iu_number])
+  end
+
   def create_alumni
     f = File.open("app/controllers/alumni.csv")
     f.readlines.each do |line|

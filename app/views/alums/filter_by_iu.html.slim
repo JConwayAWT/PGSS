@@ -1,0 +1,45 @@
+.row
+  .col-md-12
+    .text-center
+      h2 Alumni Database
+
+.row
+  .col-md-8.col-md-offset-2
+    .text-center
+      p Click to sort by any single column, or hold shift while clicking to sort by multiple columns.  You can also use the examples in the text boxes below the column headings to filter alumni by any criteria you wish.  
+
+      p If you would like to reconnect with a classmate, please #{link_to "contact the PGSS Alumni Association", "mailto:janet.hurwitz@pgssalumni.org"} to request their most recent contact information.
+
+.row#database-loading
+  .col-md-12
+    .text-center
+      i Database loading...
+
+table.table.table-bordered.table-striped.tablesorter-blue#alumni-table style="display:none"
+  thead
+    tr
+      th data-placeholder="Ex: Joe" First name
+      th data-placeholder="Ex: Smith" Last name
+      th data-placeholder="Ex: Clark" Current last name
+      th data-placeholder="Ex: Fox" High school
+      th data-placeholder="Ex: 1998 to 2000" Pgss year
+      th data-placeholder="Ex: Phila" City
+      th data-placeholder="Ex: PA" State
+      th data-placeholder="Ex: 20" IU
+  tbody
+    - @alums.each do |alum|
+      tr
+        td= alum.first_name
+        td= alum.last_name
+        td= alum.current_last_name
+        td= alum.high_school
+        td= alum.pgss_year
+        td= alum.city
+        td= alum.state
+        td= alum.iu
+
+javascript:
+  $(document).ready(function(){
+    // Make sure to change this if PGSS year is no longer the fifth column
+    $($("input[data-column='4']")[0]).css("width","102%")
+  });
