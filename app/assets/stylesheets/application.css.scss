@@ -16,6 +16,40 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.raleway{
+  font-family: 'Raleway';
+  font-weight: 700;
+}
+
+#full-wrapper{
+  min-height: 100%;
+  position: relative;
+}
+
+#full-header{
+
+}
+
+#full-content{
+  padding-bottom: 90px;
+}
+
+#full-footer{
+  background-color: #eeeeee !important;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
 #no-border-radius{
   border-bottom-left-radius: 0px;
@@ -58,10 +92,7 @@
 }
 
 #footer{
-  margin-top: 40px;
-  min-height: 50px;
   border-top: thin solid #cccccc;
-  background-color: #eeeeee !important;
   .soft-gray-text{
     color: #969696;
   }
@@ -89,7 +120,24 @@
   background-color: transparent !important;
 }
 
-html, body{
-  height: 100%;
+.year-grid-view{
+  font-size: 40px;
+  background-color: #eeeeee;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 30px;
+  border: thin solid rgb(56, 58, 110);
+
+  a{
+    color: black;
+    text-decoration: none;
+    &:hover{
+      color: #484848;
+    }
+  }
 }
 

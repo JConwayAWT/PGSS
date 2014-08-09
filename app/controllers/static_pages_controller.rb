@@ -27,4 +27,7 @@ class StaticPagesController < ApplicationController
   def find_by_iu
   end
 
+  def journals
+  end
+
 end

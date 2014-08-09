@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   root 'static_pages#index'
 
   match '/index', to: "static_pages#index", via: :get
+  match '/journals', to: "static_pages#journals", via: :get
 
   match '/program_overview', to: "static_pages#program_overview", via: :get
   match '/selection_process', to: "static_pages#selection_process", via: :get
