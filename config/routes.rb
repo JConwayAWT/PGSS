@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   match '/alumni/filter_by_iu/:iu_number', to: "alums#filter_by_iu", via: :get
 
   # enable this only when you want the alumni file to be readable
-  match '/create_alumni', to: "alums#create_alumni", via: :get
+  # match '/create_alumni', to: "alums#create_alumni", via: :get
 
   match '/alumni', to: "alums#index", via: :get
 
