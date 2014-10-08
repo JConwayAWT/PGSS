@@ -5,71 +5,125 @@ html
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
+
+
+  / <div class="navbar navbar-inverse" id="no-border-radius" role="navigation">
+  /   <div class="container-fluid blue-navbar" style="padding-top: 10px; padding-bottom: 10px;">
+  /     <div class="navbar-header">
+  /       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#securecore-navbar">
+  /         <span class="sr-only">Toggle navigation</span>
+  /         <span class="icon-bar"></span>
+  /         <span class="icon-bar"></span>
+  /         <span class="icon-bar"></span>
+  /       </button>
+  /       <div class="navbar-brand">
+  /         <div style="color:white; font-size: 30px; text-decoration: none; background-color: transparent;">
+  /           <a href="/accounts/profile" style="color: white; text-decoration: none">
+  /             <img src="/files/sc_logo_no_tag.png" style="margin-top: -13px; height: 48px">
+  /           </a>
+  /         </div>
+  /       </div>
+  /     </div>
+
+  /     <div class="navbar-collapse collapse" id="securecore-navbar">
+  /       <ul class="nav navbar-nav navbar-right" style="padding-right: 10px;">
+          
+  /           <li>
+  /             <a href="/my_company" class="header-link">Corporate Disaster Procedures</a>
+  /           </li>
+  /           <li>
+  /             <a href="/my_properties" class="header-link">My Properties</a>
+  /           </li>
+            
+  /             <li>
+  /               <a href="/admin" class="header-link">Admin Site</a>
+  /             </li>
+            
+  /           <li>
+              
+  /               <a href="/logout" class="header-link" class="white-hover">Log Out</a>
+              
+  /           </li>
+          
+  /       </ul>
+  /     </div>
+  /   </div>
+  / </div>
+
+    /       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#securecore-navbar">
+  /         <span class="sr-only">Toggle navigation</span>
+  /         <span class="icon-bar"></span>
+  /         <span class="icon-bar"></span>
+  /         <span class="icon-bar"></span>
+  /       </button>
   body
     #full-wrapper
       #full-header
         nav.navbar.navbar-inverse#no-border-radius.blue-navbar role="navigation"
-          .container-fluid style="height:70px; padding-top:10px;"
+          .container-fluid style="padding-bottom: 10px; padding-top:10px;"
             .navbar-header
+              button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#pgss-navbar"
+                span.sr-only Toggle Navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
               .navbar-brand
                 a.raleway href="/" style="color:white; font-size:40px; text-decoration: none; background-color: transparent" PGSS
-              ul.nav.navbar-nav.navbar-left
-                li
-                  = image_tag "pgss_logo_slim.png", style: "height: 40px;"
 
-            ul.nav.navbar-nav.navbar-right style="padding-right: 25px;"
-              li.active
-                a href="/journals" style="background-color: transparent; border-right: thin solid white" Journals
+            .navbar-collapse.collapse#pgss-navbar
+              ul.nav.navbar-nav.navbar-right style="padding-right: 25px;"
+                li.active
+                  a href="/journals" style="background-color: transparent;" Journals
 
-              li.dropdown
-                a.dropdown-toggle.no-click-color-change.white-right-border data-toggle="dropdown" href="#"
-                  .white-header-link
-                    | Alumni
-                    span.caret-medium
-                ul.dropdown-menu role="menu"
-                  li
-                    = link_to "Full Database", "/alumni"
-                  li
-                    = link_to "Find by IU", "/alumni/find_by_iu"
+                li.dropdown
+                  a.dropdown-toggle.no-click-color-change data-toggle="dropdown" href="#"
+                    .white-header-link
+                      | Alumni
+                      span.caret-medium
+                  ul.dropdown-menu role="menu"
+                    li
+                      = link_to "Full Database", "/alumni"
+                    li
+                      = link_to "Find by IU", "/alumni/find_by_iu"
 
-              li.dropdown
-                a.dropdown-toggle.no-click-color-change.white-right-border data-toggle="dropdown" href="#"
-                  .white-header-link
-                    | FAQs
-                    span.caret-medium
-                ul.dropdown-menu role="menu"
-                  li
-                    = link_to "Applicants", "/applicant_faq"
-                  li
-                    = link_to "Accepted Students", "/accepted_faq"
-                  li
-                    = link_to "Parents", "/parent_faq"
-              li.dropdown
-                a.dropdown-toggle.no-click-color-change.white-right-border data-toggle="dropdown" href="#"
-                  .white-header-link
-                    | Employment
-                    span.caret-medium
-                ul.dropdown-menu role="menu"
-                  li#faculty_application
-                    = link_to "Faculty Application", "#"
-                  li
-                    = link_to "TA Job Description", "/counselor_description"
-                  li#counselor_application
-                    = link_to "TA Application", "#"
-                  li#director_application
-                    = link_to "RLD Application", "#"
-              li.dropdown
-                a.dropdown-toggle.no-click-color-change data-toggle="dropdown" href="#"
-                  .white-header-link
-                    | About PGSS
-                    span.caret-medium
-                ul.dropdown-menu role="menu"
-                  li
-                    = link_to "Program Overview", "/program_overview"
-                  li
-                    = link_to "Application and Selection", "/selection_process"
-                  li
-                    = link_to "Program Costs and Commitment", "/costs_and_commitment"
+                li.dropdown
+                  a.dropdown-toggle.no-click-color-change data-toggle="dropdown" href="#"
+                    .white-header-link
+                      | FAQs
+                      span.caret-medium
+                  ul.dropdown-menu role="menu"
+                    li
+                      = link_to "Applicants", "/applicant_faq"
+                    li
+                      = link_to "Accepted Students", "/accepted_faq"
+                    li
+                      = link_to "Parents", "/parent_faq"
+                li.dropdown
+                  a.dropdown-toggle.no-click-color-change data-toggle="dropdown" href="#"
+                    .white-header-link
+                      | Employment
+                      span.caret-medium
+                  ul.dropdown-menu role="menu"
+                    li#faculty_application
+                      = link_to "Faculty Application", "#"
+                    li
+                      = link_to "TA Job Description", "/counselor_description"
+                    li#counselor_application
+                      = link_to "TA Application", "#"
+                    li#director_application
+                      = link_to "RLD Application", "#"
+                li.dropdown
+                  a.dropdown-toggle.no-click-color-change data-toggle="dropdown" href="#"
+                    .white-header-link
+                      | About PGSS
+                      span.caret-medium
+                  ul.dropdown-menu role="menu"
+                    li
+                      = link_to "Program Overview", "/program_overview"
+                    li
+                      = link_to "Application and Selection", "/selection_process"
+                    li
+                      = link_to "Program Costs and Commitment", "/costs_and_commitment"
 
 
       #full-content

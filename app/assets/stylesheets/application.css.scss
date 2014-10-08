@@ -147,3 +147,15 @@ html, body{
   }
 }
 
+.open{
+  .dropdown-menu{
+    li{
+      a{
+        color: #d5d5d5 !important;
+        &:hover{
+          color: white !important;
+        }
+      }
+    }
+  }
+}
