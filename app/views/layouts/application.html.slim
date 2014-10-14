@@ -6,56 +6,6 @@ html
     = javascript_include_tag 'application'
     = csrf_meta_tags
 
-
-  / <div class="navbar navbar-inverse" id="no-border-radius" role="navigation">
-  /   <div class="container-fluid blue-navbar" style="padding-top: 10px; padding-bottom: 10px;">
-  /     <div class="navbar-header">
-  /       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#securecore-navbar">
-  /         <span class="sr-only">Toggle navigation</span>
-  /         <span class="icon-bar"></span>
-  /         <span class="icon-bar"></span>
-  /         <span class="icon-bar"></span>
-  /       </button>
-  /       <div class="navbar-brand">
-  /         <div style="color:white; font-size: 30px; text-decoration: none; background-color: transparent;">
-  /           <a href="/accounts/profile" style="color: white; text-decoration: none">
-  /             <img src="/files/sc_logo_no_tag.png" style="margin-top: -13px; height: 48px">
-  /           </a>
-  /         </div>
-  /       </div>
-  /     </div>
-
-  /     <div class="navbar-collapse collapse" id="securecore-navbar">
-  /       <ul class="nav navbar-nav navbar-right" style="padding-right: 10px;">
-          
-  /           <li>
-  /             <a href="/my_company" class="header-link">Corporate Disaster Procedures</a>
-  /           </li>
-  /           <li>
-  /             <a href="/my_properties" class="header-link">My Properties</a>
-  /           </li>
-            
-  /             <li>
-  /               <a href="/admin" class="header-link">Admin Site</a>
-  /             </li>
-            
-  /           <li>
-              
-  /               <a href="/logout" class="header-link" class="white-hover">Log Out</a>
-              
-  /           </li>
-          
-  /       </ul>
-  /     </div>
-  /   </div>
-  / </div>
-
-    /       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#securecore-navbar">
-  /         <span class="sr-only">Toggle navigation</span>
-  /         <span class="icon-bar"></span>
-  /         <span class="icon-bar"></span>
-  /         <span class="icon-bar"></span>
-  /       </button>
   body
     #full-wrapper
       #full-header
@@ -81,7 +31,7 @@ html
                       | Alumni
                       span.caret-medium
                   ul.dropdown-menu role="menu"
-                    li
+                    li.soft-background
                       = link_to "Full Database", "/alumni"
                     li
                       = link_to "Find by IU", "/alumni/find_by_iu"

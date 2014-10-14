@@ -151,11 +151,20 @@ html, body{
   .dropdown-menu{
     li{
       a{
-        color: #d5d5d5 !important;
+        color: #555555 !important;
         &:hover{
-          color: white !important;
+          color: black !important;
+          background-color: rgb(255, 255, 205) !important;
         }
       }
+    }
+  }
+}
+
+.navbar-nav{
+  .open{
+    .dropdown-menu{
+      background-color: rgb(246, 255, 184);
     }
   }
 }
