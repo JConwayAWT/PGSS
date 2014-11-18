@@ -59,7 +59,7 @@ html
                     li
                       = link_to "TA Job Description", "/counselor_description"
                     li#counselor_application
-                      = link_to "TA Application", "#"
+                      = link_to "TA Application", asset_path("ta_application_2015.doc")
                     li#director_application
                       = link_to "RLD Application", "#"
                 li.dropdown
@@ -93,10 +93,6 @@ html
 javascript:
   $(document).ready(function(){
     $("#faculty_application").click(function(){
-      alert("This application has not yet been prepared for the upcoming year.  Please check back soon!");
-    });
-
-    $("#counselor_application").click(function(){
       alert("This application has not yet been prepared for the upcoming year.  Please check back soon!");
     });
 
