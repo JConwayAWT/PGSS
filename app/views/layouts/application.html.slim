@@ -55,13 +55,13 @@ html
                       span.caret-medium
                   ul.dropdown-menu role="menu"
                     li#faculty_application
-                      = link_to "Faculty Application", "#"
+                      = link_to "Faculty Application", asset_path("2015_faculty_employment.pdf")
                     li
                       = link_to "TA Job Description", "/counselor_description"
                     li#counselor_application
                       = link_to "TA Application", asset_path("ta_application_2015.doc")
                     li#director_application
-                      = link_to "RLD Application", "#"
+                      = link_to "RLD Application", asset_path("2015_rld_application.pdf")
                 li.dropdown
                   a.dropdown-toggle.no-click-color-change data-toggle="dropdown" href="#"
                     .white-header-link
@@ -89,15 +89,3 @@ html
                   | Portions of this site ©1996-2008 and 2012-#{Time.now.year} by Carnegie Mellon University and the faculty, staff, and students of the Pennsylvania Governor's School for the Sciences.
                   br
                   | Questions and comments regarding PGSS or this site may be directed to the #{link_to "PGSS help address", "mailto:pgss@cmu.edu"}.
-
-javascript:
-  $(document).ready(function(){
-    $("#faculty_application").click(function(){
-      alert("This application has not yet been prepared for the upcoming year.  Please check back soon!");
-    });
-
-    $("#director_application").click(function(){
-      alert("This application has not yet been prepared for the upcoming year.  Please check back soon!");
-    });
-
-  });
