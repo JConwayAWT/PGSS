@@ -126,6 +126,16 @@ html, body{
   background-color: transparent !important;
 }
 
+.year-link{
+  a{
+    color: black;
+    &:hover{
+      text-decoration: none;
+      color: #484848;
+    }
+  }
+}
+
 .year-grid-view{
   font-size: 40px;
   background-color: #eeeeee;
