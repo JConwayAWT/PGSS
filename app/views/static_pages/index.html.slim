@@ -1,8 +1,9 @@
-h2.text-center
-  b Pennsylvania Governor's School for the Sciences
+.row.up-one-pixel
+  .col-md-12.no-space.z3000
+    .title-banner Pennsylvania Governor's School for the Sciences
 
-div align="center"
-  #carousel-example-generic.carousel.slide data-ride="carousel" style="width: 720px"
+.black-bg align="center"
+  #homepage-carousel.carousel.slide data-ride="carousel" style="width: 720px"
     /! Indicators
     ol.carousel-indicators
       li.active data-slide-to="0" data-target="#index-carousel"
@@ -21,72 +22,67 @@ div align="center"
       .item.active
         = image_tag "a_001.JPG", size: "720x360"
         .carousel-caption
-          p 
-            b Students working on their team projects in Wean Hall during the final week of the program
+          p  Students working on their team projects in Wean Hall during the final week of the program
         .black-caption-overlay
 
       .item
         = image_tag "s001.JPG", size: "720x360"
         .carousel-caption
-          p
-            b Students playing on the dorm lawn between classes
+          p Students playing on the dorm lawn between classes
         .black-caption-overlay
 
       .item
         = image_tag "a_003.jpg", size: "720x360"
         .carousel-caption
-          p
-            b Jim Roberts guides a student working on a program in Processing
+          p Jim Roberts guides a student working on a program in Processing
         .black-caption-overlay
 
       .item
         = image_tag "s_002.JPG", size: "720x360"
         .carousel-caption
-          p
-            b A group of students enjoying Pittsburgh's weather in Schenley Plaza
+          p A group of students enjoying Pittsburgh's weather in Schenley Plaza
         .black-caption-overlay
 
       .item
         = image_tag "a_004.jpg", size: "720x360"
         .carousel-caption
-          p
-            b Students attend a special lecture on geology and natural gas
+          p Students attend a special lecture on geology and natural gas
         .black-caption-overlay
 
       .item
         = image_tag "s_003.JPG", size: "720x360"
         .carousel-caption
-          p
-            b A magic performance for a pirate during the annual No Talent Show
+          p A magic performance for a pirate during the annual No Talent Show
         .black-caption-overlay
 
       .item
         = image_tag "a_005.jpg", size: "720x360"
         .carousel-caption
-          p
-            b A TA helps students measuring voltage during a physics experiment
+          p A TA helps students measuring voltage during a physics experiment
         .black-caption-overlay
 
       .item
         = image_tag "s_005.JPG", size: "720x360"
         .carousel-caption
-          p
-            b Students taking a break in the evening during team project week
+          p Students taking a break in the evening during team project week
         .black-caption-overlay
 
       .item
         = image_tag "s_004.JPG", size: "720x360"
         .carousel-caption
-          p
-            b Working on assignments with friends in one of the dormitory lounges
+          p Working on assignments with friends in one of the dormitory lounges
         .black-caption-overlay
 
-    a.left.carousel-control data-slide="prev" href="#carousel-example-generic" role="button" 
+    a.left.carousel-control data-slide="prev" href="#homepage-carousel" role="button" 
       span.glyphicon.glyphicon-chevron-left
-    a.right.carousel-control data-slide="next" href="#carousel-example-generic" role="button" 
+    a.right.carousel-control data-slide="next" href="#homepage-carousel" role="button" 
       span.glyphicon.glyphicon-chevron-right
 
-  h3 Proudly hosted by Carnegie Mellon University
+
+.row
+  .col-md-12
+    .text-center
+      h3.hosted Proudly hosted by Carnegie Mellon University
 
 br
 
@@ -96,13 +92,32 @@ br
 
     hr
 
+.row
+  .col-md-5.col-md-offset-1
+    .homepage-column-header Our Goals
+
     p PGSS is proud to offer talented students the opportunity to participate in true scientific research and specialized scientific study. These opportunities are rarely available at even the best high schools, where top students are unable to be challenged at a suitably high academic level.  The program also seeks to maintain a pipeline of modern technological talent throughout the state of Pennsylvania, where cities such as Pittsburgh, Philadelphia, and State College are quickly becoming medical, technological, and entrepreneurial hubs.  Finally, PGSS takes a special interest in promoting the involvement of under-represented minorities in STEM fields and strongly encourages students from all backgrounds to apply.
 
-    p Successful PGSS applicants must be Pennsylvania residents in their junior year of high school.  Of course, demonstrated interest and/or achievement in scientific endeavors is also a major component of the application.  The acceptance committee also takes extra caution to take into consideration the opportunities which have been made available to the applicant through their school. This ensures that students from underserved districts are not unfairly excluded.  If you love science and want to join us for a summer of exploration before your senior year (or know someone who does), please find more information on our #{link_to "application page", "/selection_process"}.
+    p Successful PGSS applicants must be Pennsylvania residents in their junior year of high school.  Of course, demonstrated interest and/or achievement in scientific endeavors is also a major component of the application.  The acceptance committee also takes extra caution to take into consideration the opportunities which have been made available to the applicant through their school. This ensures that students from underserved districts are not unfairly excluded.  If you love science and want to experience a summer of exploration before your senior year (or know someone who does), there's no better place to do it than PGSS.
 
-    hr
+    .text-center
+      a href="/program_overview"
+        .btn.btn-primary.btn-large.learn-more-button type="button"
+          span.glyphicon.glyphicon-globe style="padding-right: 10px;"
+          span.learn-more Learn More
+
+  .col-md-5
+    .homepage-column-header Our Supporters
 
     p We gratefully acknowledge our co-sponsor, #{link_to "PGSS Campaign, Inc.", "http://www.pgsscampaign.org"}, alumni, parents, and friends of the Pennsylvania Governor's School for the Sciences who have generously provided funds to match the grant from the Pennsylvania Department of Education, making this year's PGSS program possible.  We also appreciate the support and assistance of the #{link_to "Mellon College of Science", "http://www.cmu.edu/mcs/"} and #{link_to "Carngie Mellon University", "http://www.cmu.edu"}, both of whom have worked with the program since its inception in 1982.
 
     p PGSS is an Institutional Member of the #{link_to "National Conference of Governor's Schools", "http://www.ncogs.org/"}.
+
+    p If you would like to be a supporter of PGSS, there are a number of ways.  Letters, emails, calls, and visits to your state representatives on behalf of the program are extremely beneficial and highly appreciated.  If you have a background in science and some time in the summer, feel free to #{link_to "send us an email", "mailto:pgss@cmu.edu"} about joining our staff or giving a guest lecture.  You can also make a direct donation to the program through the Alumni Association.
+
+    .text-center
+      a href="http://www.pgssalumni.org/donate"
+        .btn.btn-success.btn-large.learn-more-button type="button"
+          span.glyphicon.glyphicon-heart-empty style="padding-right: 10px"
+          span.learn-more Keep PGSS Going
 

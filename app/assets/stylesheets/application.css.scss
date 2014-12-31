@@ -17,6 +17,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 html, body{
   margin: 0;
@@ -24,10 +25,83 @@ html, body{
   height: 100%;
 }
 
-.carousel-caption{
-  left: 0%;
-  right: 0%;
-  width: 100%;
+.navbar{
+  margin-bottom: 0px;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Roboto', sans-serif;
+}
+
+#full-content, #full-header{
+  a, p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+}
+
+
+
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+  .row{
+    margin-left: 0px;
+    margin-right: 0px;
+    .no-space{
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}
+
+.up-one-pixel{
+  margin-top: -1px;
+}
+
+hr{
+  border-top: 1px solid #D5D5D5;
+}
+
+.title-banner{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  height: 43px;
+  margin-bottom: -43px;
+  @media (max-width: 691px){
+    display: none;
+  }
+}
+
+.hosted{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 37px;
+}
+
+.z3000{
+  z-index: 3000;
+}
+
+.black-bg{
+  background-color: black;
+}
+
+#homepage-carousel{
+  .carousel-indicators{
+    bottom: 0px;
+  }
+  .carousel-caption{
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    padding-bottom: 10px;
+  }
 }
 
 .raleway{
@@ -65,7 +139,7 @@ html, body{
 }
 
 .blue-navbar{
-  background-color: #000099;
+  background-color: rgba(112, 108, 255, 1);
   border: none;
   .white-right-border{
     border-right: thin solid white;
@@ -93,8 +167,20 @@ html, body{
   left: 0;
   right: 0;
   opacity: 0.4;
-  height: 30%;
-  top: 70%;
+  height: 20%;
+  top: 80%;
+}
+
+.homepage-column-header{
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  font-color: #5A5A5A;
+}
+
+.learn-more-button{
+  font-size: 20px;
+  width: 242px;
 }
 
 #footer{
@@ -164,7 +250,7 @@ html, body{
         color: #555555 !important;
         &:hover{
           color: black !important;
-          background-color: rgb(255, 255, 205) !important;
+          background-color: #e2e2e2 !important;
         }
       }
     }
@@ -174,7 +260,9 @@ html, body{
 .navbar-nav{
   .open{
     .dropdown-menu{
-      background-color: rgb(246, 255, 184);
+      background-color: rgba(192, 190, 255, 1);
+      z-index: 6000;
+      margin-top: -2px;
     }
   }
 }
