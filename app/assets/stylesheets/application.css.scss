@@ -40,9 +40,17 @@ h1, h2, h3, h4, h5{
   }
 }
 
+.car-image{
+  color: red;
+}
+
 
 
 .container-fluid{
+
+  .navbar-header{
+    margin-right: 2px;
+  }
   padding-left: 0px;
   padding-right: 0px;
   .row{
@@ -100,7 +108,7 @@ hr{
     left: 0%;
     right: 0%;
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 2px;
   }
 }
 
@@ -167,8 +175,8 @@ hr{
   left: 0;
   right: 0;
   opacity: 0.4;
-  height: 20%;
-  top: 80%;
+  height: 15%;
+  top: 85%;
 }
 
 .homepage-column-header{
