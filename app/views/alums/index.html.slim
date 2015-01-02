@@ -10,33 +10,35 @@
 
       p If you would like to reconnect with a classmate, please #{link_to "contact the PGSS Alumni Association", "mailto:janet.hurwitz@pgssalumni.org"} to request their most recent contact information.
 
-.row#database-loading
+.row.row-padded#database-loading
   .col-md-12
     .text-center
       i Database loading...
 
-table.table.table-bordered.table-striped.tablesorter-blue#alumni-table style="display:none"
-  thead
-    tr
-      th data-placeholder="Ex: Joe" First name
-      th data-placeholder="Ex: Smith" Last name
-      th data-placeholder="Ex: Clark" Current last name
-      th data-placeholder="Ex: Fox" High school
-      th data-placeholder="Ex: 1998 to 2000" Pgss year
-      th data-placeholder="Ex: Phila" City
-      th data-placeholder="Ex: PA" State
-      th data-placeholder="Ex: 20" IU
-  tbody
-    - @alums.each do |alum|
-      tr
-        td= alum.first_name
-        td= alum.last_name
-        td= alum.current_last_name
-        td= alum.high_school
-        td= alum.pgss_year
-        td= alum.city
-        td= alum.state
-        td= alum.iu
+.row.row-padded
+  .col-md-12
+    table.table.table-bordered.table-striped.tablesorter-blue#alumni-table style="display:none"
+      thead
+        tr
+          th data-placeholder="Ex: Joe" First name
+          th data-placeholder="Ex: Smith" Last name
+          th data-placeholder="Ex: Clark" Current last name
+          th data-placeholder="Ex: Fox" High school
+          th data-placeholder="Ex: 1998 to 2000" Pgss year
+          th data-placeholder="Ex: Phila" City
+          th data-placeholder="Ex: PA" State
+          th data-placeholder="Ex: 20" IU
+      tbody
+        - @alums.each do |alum|
+          tr
+            td= alum.first_name
+            td= alum.last_name
+            td= alum.current_last_name
+            td= alum.high_school
+            td= alum.pgss_year
+            td= alum.city
+            td= alum.state
+            td= alum.iu
 
 javascript:
   $(document).ready(function(){

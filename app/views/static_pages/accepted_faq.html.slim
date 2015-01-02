@@ -3,217 +3,181 @@
 .row
   .col-md-12
     .text-center
-      h1 Accepted Student FAQ
+      h1.faq-headline Accepted Student FAQ
 
 .row
-  .col-md-10.col-md-offset-1
-    #accordion.panel-group
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | What exactly will I be doing if I come to PGSS?  Is it more than just classes?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p Absolutely!  For a more detailed description of the major components of the program, please read through our #{link_to "overview", "/program_overview"} page.  To summarize, students participate in core courses, research labs, team projects, guest lectures, and elective classes.  In addition, the residence life staff devotes considerable effort to making sure students have numerous outlets for social activity and interaction, which is an essential part of the PGSS experience.  
+  .col-md-8.col-md-offset-2
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; What exactly will I be doing if I come to PGSS?  Is it more than just classes?
+      .later-display
+        .new-faq-style-answer
+          p Absolutely!  For a more detailed description of the major components of the program, please read through our #{link_to "overview", "/program_overview"} page.  To summarize, students participate in core courses, research labs, team projects, guest lectures, and elective classes.  In addition, the residence life staff devotes considerable effort to making sure students have numerous outlets for social activity and interaction, which is an essential part of the PGSS experience.  
 
-              p By the end of PGSS, you may have completed a course in special relativity, learned about the history of mathematics, synthesized yttrium-based superconductors, attended lectures on local geology, learned how to swing dance, enjoyed s'mores around a bonfire with new friends, talked about life and work with your favorite professor over lunch, and hundreds of other incredible experiences.  If you do choose to join us, you will find many more ways than just your core courses to grow both academically and personally.
+          p By the end of PGSS, you may have completed a course in special relativity, learned about the history of mathematics, synthesized yttrium-based superconductors, attended lectures on local geology, learned how to swing dance, enjoyed s'mores around a bonfire with new friends, talked about life and work with your favorite professor over lunch, and hundreds of other incredible experiences.  If you do choose to join us, you will find many more ways than just your core courses to grow both academically and personally.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | What does a typical day look like for a PGSS student?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p All students start the day with a block of core courses from 8:00AM until 12:30PM (with breaks between classes).  From there, students will usually eat lunch at Resnik Hall, where the cost of lunch is covered by the program scholarship.  There's time for one elective after lunch, and then students will spend three hours either working in the lab or doing research for their team project.  Dinner is also available at Resnik Hall, and then there's time for up to two electives in the evening afterwards.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; What does a typical day look like for a PGSS student?
+      .later-display
+        .new-faq-style-answer
+          p All students start the day with a block of core courses from 8:00AM until 12:30PM (with breaks between classes).  From there, students will usually eat lunch at Resnik Hall, where the cost of lunch is covered by the program scholarship.  There's time for one elective after lunch, and then students will spend three hours either working in the lab or doing research for their team project.  Dinner is also available at Resnik Hall, and then there's time for up to two electives in the evening afterwards.
 
-              p All academic activities are typically finished by 8:30PM, at which time many students return to the dormitory to complete their assignments.  However, students are also free at this time to explore the campus, go for a run, use the university tennis courts, practice piano in the dormitory's practice rooms, spend some time talking to friends from home, or other activities of their choosing.  The residence life staff will also have an activity planned for students every day of the camp, and students are encouraged (but not required) to participate in as many of these activities as possible.  Examples include stargazing, bowling, a pool party, the traditional PGSS Goofy Olympics, and larger trips on the weekend to Kennywood Park, a Pittsburgh Pirates game, and more.
+          p All academic activities are typically finished by 8:30PM, at which time many students return to the dormitory to complete their assignments.  However, students are also free at this time to explore the campus, go for a run, use the university tennis courts, practice piano in the dormitory's practice rooms, spend some time talking to friends from home, or other activities of their choosing.  The residence life staff will also have an activity planned for students every day of the camp, and students are encouraged (but not required) to participate in as many of these activities as possible.  Examples include stargazing, bowling, a pool party, the traditional PGSS Goofy Olympics, and larger trips on the weekend to Kennywood Park, a Pittsburgh Pirates game, and more.
 
-              p Students are required to be back in the dorm by 11:30PM on school nights and by 12:30AM otherwise.  Furthermore, they must return to their gender-separated side of the dorm half an hour after curfew.  Although no lights out time is enforced, students usually are busy enough during the day that asking students to sleep at a reasonable hour is not necessary.
+          p Students are required to be back in the dorm by 11:30PM on school nights and by 12:30AM otherwise.  Furthermore, they must return to their gender-separated side of the dorm half an hour after curfew.  Although no lights out time is enforced, students usually are busy enough during the day that asking students to sleep at a reasonable hour is not necessary.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | How is the food at the cafeteria?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p Students generally say that Resnik Hall has better quality food than many other comparable summer programs.  There are also a number of options provided at every meal, including salads, a pasta bar, a pizza bar, a sandwich bar, a vegan section, gluten-free items, a grilled section, cereals, yogurt, and a wide range of quality fruits.  Perhaps more importantly, all of this is provided <b>free of cost</b>.  Besides, all of your friends are going to be eating there!
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; How is the food at the cafeteria?
+      .later-display
+        .new-faq-style-answer
+          p Students generally say that Resnik Hall has better quality food than many other comparable summer programs.  There are also a number of options provided at every meal, including salads, a pasta bar, a pizza bar, a sandwich bar, a vegan section, gluten-free items, a grilled section, cereals, yogurt, and a wide range of quality fruits.  Perhaps more importantly, all of this is provided <b>free of cost</b>.  Besides, all of your friends are going to be eating there!
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | Should I bring a computer?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p <b>Yes</b>.  While CMU does have a number of newly renovated computing clusters, students certainly find it most convenient to do work on their own computers.  A true laptop computer is probably the best option (as opposed to a netbook, a tablet, or a desktop computer).  None of the classes will require students to have their own computer, and any students who don't have access to a computer of their own are free to use the CMU computing resources during any free time before their curfew.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; Should I bring a computer?
+      .later-display
+        .new-faq-style-answer
+          p <b>Yes</b>.  While CMU does have a number of newly renovated computing clusters, students certainly find it most convenient to do work on their own computers.  A true laptop computer is probably the best option (as opposed to a netbook, a tablet, or a desktop computer).  None of the classes will require students to have their own computer, and any students who don't have access to a computer of their own are free to use the CMU computing resources during any free time before their curfew.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | What school supplies should I bring?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p Students suggest that the following school supplies are most important:
-              ul
-                li Pens and pencils
-                li Pencil sharpener
-                li Erasers
-                li A few notebooks or a binder with paper
-                li Folders
-                li A stapler
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; What school supplies should I bring?
+      .later-display
+        .new-faq-style-answer
+          p Students suggest that the following school supplies are most important:
+            ul
+              li Pens and pencils
+              li Pencil sharpener
+              li Erasers
+              li A few notebooks or a binder with paper
+              li Folders
+              li A stapler
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | What items should I pack that I might not think of normally?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p While the weather in Pittsburgh is generally quite hot during the summer, it can be cool on rainy days, in the main lecture hall, or in the evenings.  Therefore, students should bring a small number of warm clothing items and at least one heavy blanket.  Other items which might slip students' minds include:
-              ul
-                li An umbrella
-                li A fan
-                li A large water bottle
-                li Snack food
-                li A sweatshirt
-                li Dress clothes
-                li Goofy clothes/a costume
-                li A sleep mask
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; What items should I pack that I might not think of normally?
+      .later-display
+        .new-faq-style-answer
+          p While the weather in Pittsburgh is generally quite hot during the summer, it can be cool on rainy days, in the main lecture hall, or in the evenings.  Therefore, students should bring a small number of warm clothing items and at least one heavy blanket.  Other items which might slip students' minds include:
+            ul
+              li An umbrella
+              li A fan
+              li A large water bottle
+              li Snack food
+              li A sweatshirt
+              li Dress clothes
+              li Goofy clothes/a costume
+              li A sleep mask
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | Is <b>everything</b> free?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p The scholarship includes all necessary parts of the program, but some optional aspects of the program are not covered, and there is no stipend provided.  Three meals for each week day and two meals for each weekend day are covered, as is the cost of the dorm room and all expenses related to courses, labs, and team projects.  Incidental purchases of snacks, school supplies, or other such items are not covered by the scholarship.  Some of the weekend social activities planned by the residence life staff may also have a small cost associated with them -- for example, students might need to pay for a bus ticket or their ticket to a Pirates game.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; Is <b>everything</b> free?
+      .later-display
+        .new-faq-style-answer
+          p The scholarship includes all necessary parts of the program, but some optional aspects of the program are not covered, and there is no stipend provided.  Three meals for each week day and two meals for each weekend day are covered, as is the cost of the dorm room and all expenses related to courses, labs, and team projects.  Incidental purchases of snacks, school supplies, or other such items are not covered by the scholarship.  Some of the weekend social activities planned by the residence life staff may also have a small cost associated with them -- for example, students might need to pay for a bus ticket or their ticket to a Pirates game.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | Can I bring my instrument?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p Of course!  Many PGSS students are also talented musicians, and there will be time for students to practice and play during some evenings and weekends.  For the last two years, the program's dorm included two sound-proof piano rooms where students can bring their instruments for private practice.  The residence life staff also hosts an annual No Talent Show, and musically inclined students will definitely want to have their instruments on hand for that evening.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; Can I bring my instrument?
+      .later-display
+        .new-faq-style-answer
+          p Of course!  Many PGSS students are also talented musicians, and there will be time for students to practice and play during some evenings and weekends.  For the last two years, the program's dorm included two sound-proof piano rooms where students can bring their instruments for private practice.  The residence life staff also hosts an annual No Talent Show, and musically inclined students will definitely want to have their instruments on hand for that evening.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | Can I bring my summer homework?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p Yes, although you may find yourself so caught up in the academic and social activities of PGSS that you won't be able to (or won't want to!) make time for it.  But don't worry -- after you finish PGSS, we're pretty sure your remaining summer work will feel relatively easy.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; Can I bring my summer homework?
+      .later-display
+        .new-faq-style-answer
+          p Yes, although you may find yourself so caught up in the academic and social activities of PGSS that you won't be able to (or won't want to!) make time for it.  But don't worry -- after you finish PGSS, we're pretty sure your remaining summer work will feel relatively easy.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | Do I need special clothes for the labs?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p Yes.  There is a chance that you will not be in any of the labs or team projects which require long pants and closed-toe shoes, but it's best to be prepared with a few pairs of pants and at least one pair of sneakers.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; Do I need special clothes for the labs?
+      .later-display
+        .new-faq-style-answer
+          p Yes.  There is a chance that you will not be in any of the labs or team projects which require long pants and closed-toe shoes, but it's best to be prepared with a few pairs of pants and at least one pair of sneakers.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | Is it okay if I don't know anyone going?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p This is definitely fine, and the greaty majority of students do not know anyone else who will be attending before they arrive.  The social program developed by the residence life staff, along with the intensity of the work and the high number of shared experiences, virtually guarantees that all campers will find a number of close friends, collaborators, reviewers, study buddies, and practice partners within just days of starting the program.  Relationships formed in this environment become strong quickly and typically lead to friendships that last long after the program ends and have even led to marriage.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; Is it okay if I don't know anyone going?
+      .later-display
+        .new-faq-style-answer
+          p This is definitely fine, and the greaty majority of students do not know anyone else who will be attending before they arrive.  The social program developed by the residence life staff, along with the intensity of the work and the high number of shared experiences, virtually guarantees that all campers will find a number of close friends, collaborators, reviewers, study buddies, and practice partners within just days of starting the program.  Relationships formed in this environment become strong quickly and typically lead to friendships that last long after the program ends and have even led to marriage.
 
-              p To summarize, if you're anxious about making friends in a new environment, you don't need to worry.  If you come to PGSS, you almost can't help but have a dorm full of friends in a matter of weeks.
+          p To summarize, if you're anxious about making friends in a new environment, you don't need to worry.  If you come to PGSS, you almost can't help but have a dorm full of friends in a matter of weeks.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | Is PGSS an especially competitive atmosphere?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p <b>No</b>.  No one would be able to complete PGSS if a spirit of competition was fostered.  The program attempts to emulate the professional scientific community, where a single paper could have dozens or even hundreds of authors, and projects require teams of researchers, engineers, administrators, publishers, and more.  The high school model of an individual doing everything on their own is not relevant at PGSS, nor is the idea of an individual grade.  Students will work together to achieve something which they would certainly not be able to accomplish by themselves, and assessment comes in the form of a cumulative review at the end of the program.  In fact, many PGSS students view the program as a respite from the competitive environment of their high schools.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; Is PGSS an especially competitive atmosphere?
+      .later-display
+        .new-faq-style-answer
+          p <b>No</b>.  No one would be able to complete PGSS if a spirit of competition was fostered.  The program attempts to emulate the professional scientific community, where a single paper could have dozens or even hundreds of authors, and projects require teams of researchers, engineers, administrators, publishers, and more.  The high school model of an individual doing everything on their own is not relevant at PGSS, nor is the idea of an individual grade.  Students will work together to achieve something which they would certainly not be able to accomplish by themselves, and assessment comes in the form of a cumulative review at the end of the program.  In fact, many PGSS students view the program as a respite from the competitive environment of their high schools.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | How do lectures work?  Why do we have professors and TAs? What about homework?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p Core course lectures take place every week day for 50 minutes each sometime between 8:00AM and 12:30PM.  These courses are <b>always</b> taught by full professors -- not TAs, not graduate students, not professionals in the field.  Professors will assign one problem set per week, and one core course problem set will be due on each day of the week.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; How do lectures work?  Why do we have professors and TAs? What about homework?
+      .later-display
+        .new-faq-style-answer
+          p Core course lectures take place every week day for 50 minutes each sometime between 8:00AM and 12:30PM.  These courses are <b>always</b> taught by full professors -- not TAs, not graduate students, not professionals in the field.  Professors will assign one problem set per week, and one core course problem set will be due on each day of the week.
 
-              p The problem sets are designed to be especially challenging and to expose top students to new methods and ideas in science and problem solving.  While students are able to figure out perhaps a majority of the questions on their own or with classmates, they may occasionally need an external source of help.  Therefore, each core course will be accompanied by at least two teaching assistants, who also live in the dormitory with the students and are available for help and guidance on academic issues to all students.  However, don't view TAs only as homework helpers -- they will also be guiding you through the social program, helping you explore Pittsburgh, answering your questions about college, organizing ping-pong competitions, and much, much more.
+          p The problem sets are designed to be especially challenging and to expose top students to new methods and ideas in science and problem solving.  While students are able to figure out perhaps a majority of the questions on their own or with classmates, they may occasionally need an external source of help.  Therefore, each core course will be accompanied by at least two teaching assistants, who also live in the dormitory with the students and are available for help and guidance on academic issues to all students.  However, don't view TAs only as homework helpers -- they will also be guiding you through the social program, helping you explore Pittsburgh, answering your questions about college, organizing ping-pong competitions, and much, much more.
 
-              p Your homework will also be graded by the TAs (or professors in some rare situations).  While your homework will not receive a grade, all students are <b>required</b> to demonstrate thorough understanding of the assigned material before the homework is finally accepted.  Thus, students may need to submit two or more revisions of their homework before it is deemed complete.  TAs will provide significant commentary and guidance to students who are struggling with homework problems.
+          p Your homework will also be graded by the TAs (or professors in some rare situations).  While your homework will not receive a grade, all students are <b>required</b> to demonstrate thorough understanding of the assigned material before the homework is finally accepted.  Thus, students may need to submit two or more revisions of their homework before it is deemed complete.  TAs will provide significant commentary and guidance to students who are struggling with homework problems.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | Are we allowed to leave the Carnegie Mellon campus?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p The campus and the surrounding area have been categorized into green, yellow, and red zones, each of which can be accessed under different circumstances.  A description is below, and all students will have access to detailed maps upon arrival at the program's dormitory.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; Are we allowed to leave the Carnegie Mellon campus?
+      .later-display
+        .new-faq-style-answer
+          p The campus and the surrounding area have been categorized into green, yellow, and red zones, each of which can be accessed under different circumstances.  A description is below, and all students will have access to detailed maps upon arrival at the program's dormitory.
 
-              p The green zone includes the Carnegie Mellon campus.  Students are free to move about the campus at will before their curfew.  There are a few exceptions.  Students are not allowed into the residential portions of other dormitories on campus, and students may not enter areas which require special access, such as non-PGSS laboratories.
+          p The green zone includes the Carnegie Mellon campus.  Students are free to move about the campus at will before their curfew.  There are a few exceptions.  Students are not allowed into the residential portions of other dormitories on campus, and students may not enter areas which require special access, such as non-PGSS laboratories.
 
-              p The yellow zone is comprised of the areas surrounding the Carnegie Mellon campus, including Squirrel Hill and Oakland.  There are a number of dining and shopping locations within the yellow zone that are typically of interest to PGSS students.  Participants are allowed into the yellow zone with a buddy or with a TA before 8:30PM as long as they sign out at the PGSS front desk.  After 8:30PM, any students in the yellow zone must be accompanied by a TA.
+          p The yellow zone is comprised of the areas surrounding the Carnegie Mellon campus, including Squirrel Hill and Oakland.  There are a number of dining and shopping locations within the yellow zone that are typically of interest to PGSS students.  Participants are allowed into the yellow zone with a buddy or with a TA before 8:30PM as long as they sign out at the PGSS front desk.  After 8:30PM, any students in the yellow zone must be accompanied by a TA.
 
-              p The red zone includes anything outside of the yellow zone and is off-limits to all students for the duration of the program unless they have signed out at the PGSS front desk and are traveling with a TA.
-
-javascript:
-  $(document).ready(function(){
-    $.each($(".panel-collapse"), function(index, value){
-      $(value).attr("id","collapse" + index.toString());
-      index += 1;
-    });
-  });
+          p The red zone includes anything outside of the yellow zone and is off-limits to all students for the duration of the program unless they have signed out at the PGSS front desk and are traveling with a TA.
+          

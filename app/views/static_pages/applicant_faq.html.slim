@@ -3,117 +3,82 @@
 .row
   .col-md-12
     .text-center
-      h1 Applicant FAQ
+      h1.faq-headline Applicant FAQ
 
 .row
-  .col-md-10.col-md-offset-1
-    #accordion.panel-group
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | What are the start and end dates of the program this year?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              | Students are expected to arrive between 10:00AM and 2:00PM on Sunday, June 28.  The final day is Saturday, August 1, and students must be fully moved out of the dorm before noon.
+  .col-md-8.col-md-offset-2
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; What are the start and end dates of the program this year?
+      .later-display
+        .new-faq-style-answer
+          p Students are expected to arrive between 10:00AM and 2:00PM on Sunday, June 28.  The final day is Saturday, August 1, and students must be fully moved out of the dorm before noon.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | I play Olympic soccer/am training for my Broadway debut/practice piano at least eight hours per day.  Can I still do this at PGSS?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p PGSS maintains a very busy schedule, and most of the day between 8:00AM and 9:00PM contains some scheduled activity.  However, many students are able to manage their time well enough to make room for athletic or artistic practice, although this is usually not at the same level of commitment as it would be outside of the program.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; I train for sports/music multiple hours per day. Can I continue this at PGSS?
+      .later-display
+        .new-faq-style-answer
+          p PGSS maintains a very busy schedule, and most of the day between 8:00AM and 9:00PM contains some scheduled activity.  However, many students are able to manage their time well enough to make room for athletic or artistic practice, although this is usually not at the same level of commitment as it would be outside of the program.
 
-              p Students will have access to CMU's athletic facilities (including a number of gyms, courts, and fields), and there are music practice rooms in the program's dormitory for this year.  Students typically have sufficient free time on the weekend to devote a fair amount of time to their pursuits outside of science.
+          p Students will have access to CMU's athletic facilities (including a number of gyms, courts, and fields), and there are music practice rooms in the program's dormitory for this year.  Students typically have sufficient free time on the weekend to devote a fair amount of time to their pursuits outside of science.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | Can my parents come see me at some point?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p Typically, the third weekend of the program is designated as Parents Weekend, and parents are encouraged to come and visit their student.  Furthermore, during that weekend and <i>only</i> during that weekend, parents are allowed to pick their student up and travel with them freely (including in private vehicles, which students are not allowed in otherwise).  Please note that students are only allowed to be away from the program during the day and <b>must</b> return to the PGSS dormitory at night and that program curfews still apply.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; Can my parents come see me at some point?
+      .later-display
+        .new-faq-style-answer
+          p Typically, the third weekend of the program is designated as Parents Weekend, and parents are encouraged to come and visit their student.  Furthermore, during that weekend and <i>only</i> during that weekend, parents are allowed to pick their student up and travel with them freely (including in private vehicles, which students are not allowed in otherwise).  Please note that students are only allowed to be away from the program during the day and <b>must</b> return to the PGSS dormitory at night and that program curfews still apply.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | Do I need to get a physical?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p If your last physical exam is still accepted by your local school district, then PGSS will also accept it. Essentially, as long as your primary care doctor will provide their signature on your current physical, you don't need to get a new one.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; Do I need to get a physical?
+      .later-display
+        .new-faq-style-answer
+          p If your last physical exam is still accepted by your local school district, then PGSS will also accept it. Essentially, as long as your primary care doctor will provide their signature on your current physical, you don't need to get a new one.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | When do acceptance decisions come out?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p Decisions are typically finalized, with letters mailed out, in the first week of April.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; When do acceptance decisions come out?
+      .later-display
+        .new-faq-style-answer
+          p Decisions are typically finalized, with letters mailed out, in the first week of April.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | Will I have a roommate? If my friend is also applying, can I request to have them be my roommate?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p In all but the rarest of circumstances, every student will have a roommate.  While adjusting to living in close quarters with someone new might be uncomfortable at first, it prepares students for life at college and -- more importantly -- plays an important role in expanding students' social and support networks.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; Will I have a roommate? Can I request to have my friend be my roommate?
+      .later-display
+        .new-faq-style-answer
+          p In all but the rarest of circumstances, every student will have a roommate.  While adjusting to living in close quarters with someone new might be uncomfortable at first, it prepares students for life at college and -- more importantly -- plays an important role in expanding students' social and support networks.
 
-              p Roommates are assigned randomly.  Requests for a specific roommate can't be given special consideration.
+          p Roommates are assigned randomly.  Requests for a specific roommate can't be given special consideration.
 
-    .panel.panel-default
-      .panel-heading
-        h4.panel-title
-          a data-parent="#accordion" data-toggle="collapse" href="#collapse#{index}"
-            | I checked out some PGSS team projects from last year, and the material seems really advanced.  I haven't even taken calculus yet! Will I be able to handle the work at PGSS?
-            - index += 1
-      .panel-collapse.collapse
-        .panel-body
-          .row
-            .col-md-12
-              p Please keep in mind that the work you see in the journals is the final result of weeks of intense work, led by professors and professional researchers, of students who have received tremendous training and support from the program's extremely supportive staff and faculty.  Applicants are certainly not expected to know how to complete the assignments at the time they begin the program.  In fact, we specifically choose topics and set the difficulty level such that everyone will begin on nearly equally footing and be challenged academically as they have never been before.
+    .new-faq-style-question data-answer="#answer-#{index}"
+      - index += 1
+      .original-display
+        .circular
+          span.plus-sign +
+        .dropdown-line &nbsp; The team projects seemed really advanced -- can I handle this?
+      .later-display
+        .new-faq-style-answer
+          p Please keep in mind that the work you see in the journals is the final result of weeks of intense work, led by professors and professional researchers, of students who have received tremendous training and support from the program's extremely supportive staff and faculty.  Applicants are certainly not expected to know how to complete the assignments at the time they begin the program.  In fact, we specifically choose topics and set the difficulty level such that everyone will begin on nearly equally footing and be challenged academically as they have never been before.
 
-              p Also, don't be intimidated if your school has not been able to offer you the most competitive classes possible.  While many of our students are enrolled in AP/IB courses or perhaps have taken classes at a local college, a great number come to PGSS without these opportunities and are still very successful.  The program is designed to reward curiosity and dedication -- while preparation may be a result of these traits, previous exposure alone is not sufficient for a rewarding PGSS experience.
-
-javascript:
-  $(document).ready(function(){
-    $.each($(".panel-collapse"), function(index, value){
-      $(value).attr("id","collapse" + index.toString());
-      index += 1;
-    });
-  });
-
-
-
-
-
-
-
-
-
-
-
-
+          p Also, don't be intimidated if your school has not been able to offer you the most competitive classes possible.  While many of our students are enrolled in AP/IB courses or perhaps have taken classes at a local college, a great number come to PGSS without these opportunities and are still very successful.  The program is designed to reward curiosity and dedication -- while preparation may be a result of these traits, previous exposure alone is not sufficient for a rewarding PGSS experience.

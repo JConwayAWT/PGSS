@@ -23,5 +23,26 @@ $(document).ready(function(){
             interval: 5000,
         });
     });
+
+    $.each($(".later-display"), function(index, value){
+      $(value).attr("id","answer-" + index.toString());
+    });
+
+    $(".original-display").click(function(){
+
+      var target = $(this).parent().data('answer');
+
+      if ($(target).css('display') == 'none') {
+        $(target).slideDown('fast');
+        $(this).find('.plus-sign').text('X');
+        $(this).find('.plus-sign').addClass("x-sign-mods");
+      }
+      else {
+        $(target).slideUp('fast');
+        $(this).find('.plus-sign').text('+');
+        $(this).find('.plus-sign').removeClass("x-sign-mods");
+      }
+    });
+    
 });
 

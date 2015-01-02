@@ -29,6 +29,33 @@ html, body{
   margin-bottom: 0px;
 }
 
+.nav.navbar-nav.navbar-right{
+  padding-top: 5px;
+  padding-right: 25px;
+  li{
+    ul{
+      li{
+        a{
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+.nav{
+  li{
+    a{
+      padding: 10px 13px;
+    }
+  }
+}
+
+.collapse-holder{
+  padding-left: 15px;
+}
+
 h1, h2, h3, h4, h5{
   font-family: 'Roboto', sans-serif;
 }
@@ -168,6 +195,11 @@ hr{
   min-height: 72%;
 }
 
+.row-padded{
+  padding-left:15px;
+  padding-right:15px;
+}
+
 .black-caption-overlay{
   background-color: black;
   position: absolute;
@@ -175,8 +207,7 @@ hr{
   left: 0;
   right: 0;
   opacity: 0.4;
-  height: 15%;
-  top: 85%;
+  height: 50px;
 }
 
 .homepage-column-header{
@@ -277,4 +308,79 @@ hr{
 
 .banner-blue{
   background-color: rgba(112, 108, 255, 1);
+}
+
+$faq-gray:              #aaaaaa;
+$faq-hover:             #706cff;
+$circle-radius:         36px;
+$spacing-fix:           14px;
+$negative-spacing-fix:  -14px;
+
+.new-faq-style-question{
+  padding-bottom: 20px;
+  margin-top: $negative-spacing-fix;
+
+
+  .original-display{
+    display: inherit;
+    padding-bottom: $spacing-fix;
+    margin-bottom: 10px;
+    
+    &:hover{
+      cursor: pointer;
+
+      .circular{
+        border-color: $faq-hover;
+        .plus-sign{
+          color: $faq-hover;
+        }
+      }
+      .dropdown-line{
+        border-color: $faq-hover;
+      }
+    }
+
+    .circular{
+      display: block;
+      float: left;
+      font-size: 26px;
+      font-weight: 100;
+      font-family: initial;
+      height: $circle-radius;
+      width: $circle-radius;
+      text-align: center;
+      border: thin solid $faq-gray;
+      border-radius: 18px;
+
+      .plus-sign{
+        color: $faq-gray;
+      }
+
+      .x-sign-mods{
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+      }
+    }
+
+  }
+  .dropdown-line{
+    display: inline-block;
+    border-bottom: 1px solid $faq-gray;
+
+    // this 36px is actually $circle-radius, but scss can't handle that
+    width: calc(100% - 36px);
+
+  }
+
+  .later-display{
+    display: none;
+    .new-faq-style-answer{
+      margin-left: 68px;
+      margin-right: 68px;
+    }
+  }
+}
+
+.faq-headline{
+  padding-bottom: 25px;
 }
