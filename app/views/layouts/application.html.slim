@@ -24,21 +24,18 @@ html
               .collapse-holder
                 ul.nav.navbar-nav.navbar-right
 
-                  li.active.donate-link
-                    a href="http://www.pgssalumni.org/donate" style="background-color: transparent;" Donate
-                  li.active
-                    a href="/journals" style="background-color: transparent;" Journals
-
                   li.dropdown
                     a.dropdown-toggle.no-click-color-change data-toggle="dropdown" href="#"
                       .white-header-link
-                        | Alumni
+                        | About PGSS
                         span.caret-medium
                     ul.dropdown-menu role="menu"
-                      li.soft-background
-                        = link_to "Full Database", "/alumni"
                       li
-                        = link_to "Find by IU", "/alumni/find_by_iu"
+                        = link_to "Program Overview", "/program_overview"
+                      li
+                        = link_to "Application and Selection", "/selection_process"
+                      li
+                        = link_to "Program Costs and Commitment", "/costs_and_commitment"
 
                   li.dropdown
                     a.dropdown-toggle.no-click-color-change data-toggle="dropdown" href="#"
@@ -52,6 +49,7 @@ html
                         = link_to "Accepted Students", "/accepted_faq"
                       li
                         = link_to "Parents", "/parent_faq"
+
                   li.dropdown
                     a.dropdown-toggle.no-click-color-change data-toggle="dropdown" href="#"
                       .white-header-link
@@ -66,18 +64,24 @@ html
                         = link_to "TA Application", asset_path("ta_application_2015.doc")
                       li#director_application
                         = link_to "RLD Application", asset_path("2015_rld_application.pdf")
+
                   li.dropdown
                     a.dropdown-toggle.no-click-color-change data-toggle="dropdown" href="#"
                       .white-header-link
-                        | About PGSS
+                        | Alumni
                         span.caret-medium
                     ul.dropdown-menu role="menu"
+                      li.soft-background
+                        = link_to "Full Database", "/alumni"
                       li
-                        = link_to "Program Overview", "/program_overview"
-                      li
-                        = link_to "Application and Selection", "/selection_process"
-                      li
-                        = link_to "Program Costs and Commitment", "/costs_and_commitment"
+                        = link_to "Find by IU", "/alumni/find_by_iu"
+
+                  li.active
+                    a href="/journals" style="background-color: transparent;" Journals
+                  li.active.donate-link
+                    a href="http://www.pgssalumni.org/donate" style="background-color: transparent;" Donate
+
+
 
 
       #full-content

@@ -129,13 +129,14 @@ hr{
 
 #homepage-carousel{
   .carousel-indicators{
-    bottom: 0px;
+    bottom: -6px;
   }
   .carousel-caption{
     left: 0%;
     right: 0%;
     width: 100%;
-    padding-bottom: 2px;
+    padding-bottom: 0px;
+    margin-bottom: -5px;
   }
 }
 
@@ -320,6 +321,9 @@ $negative-spacing-fix:  -14px;
   padding-bottom: 20px;
   margin-top: $negative-spacing-fix;
 
+  .year-display{
+    padding-bottom: 4px;
+  }
 
   .original-display{
     display: inherit;
@@ -366,10 +370,16 @@ $negative-spacing-fix:  -14px;
   .dropdown-line{
     display: inline-block;
     border-bottom: 1px solid $faq-gray;
+    font-family: 'Roboto', sans-serif;
 
     // this 36px is actually $circle-radius, but scss can't handle that
     width: calc(100% - 36px);
 
+  }
+
+  .journal-year-group{
+    font-size: 20px;
+    margin-top: -7px;
   }
 
   .later-display{
@@ -377,6 +387,44 @@ $negative-spacing-fix:  -14px;
     .new-faq-style-answer{
       margin-left: 68px;
       margin-right: 68px;
+      
+      a.no-underline{
+        &:hover{
+          text-decoration: none;
+        }
+      }
+
+      .available-year{
+        font-family: 'Roboto', sans-serif;
+        color: grey;
+        font-size: 24px;
+        font-weight: 100;
+
+        -webkit-transition: color 0.4s ease;
+        -moz-transition: color 0.4s ease;
+        -o-transition: color 0.4s ease;
+        transition: color 0.4s ease;
+
+        -webkit-transition: font-size 0.4s ease;
+        -moz-transition: font-size 0.4s ease;
+        -o-transition: font-size 0.4s ease;
+        transition: font-size 0.4s ease;
+
+        &:hover{
+          color: blue;
+          font-size: 29px;
+
+          -webkit-transition: color 0.4s ease;
+          -moz-transition: color 0.4s ease;
+          -o-transition: color 0.4s ease;
+          transition: color 0.4s ease;
+
+          -webkit-transition: font-size 0.4s ease;
+          -moz-transition: font-size 0.4s ease;
+          -o-transition: font-size 0.4s ease;
+          transition: font-size 0.4s ease;
+        }
+      }
     }
   }
 }
