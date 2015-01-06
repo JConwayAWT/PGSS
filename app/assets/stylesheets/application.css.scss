@@ -18,6 +18,8 @@
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+  
+$navbar-blue:       rgba(112, 108, 255, 1);
 
 html, body{
   margin: 0;
@@ -30,16 +32,24 @@ html, body{
 }
 
 .nav.navbar-nav.navbar-right{
-  padding-top: 5px;
   padding-right: 25px;
-  li{
-    ul{
-      li{
-        a{
-          padding-top: 5px;
-          padding-bottom: 5px;
-        }
-      }
+  li.active, li.dropdown{
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    -webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+
+    &:hover{
+      background-color: lighten($navbar-blue, 7.5%);
+
+      -webkit-transition: background-color 0.4s ease;
+      -moz-transition: background-color 0.4s ease;
+      -o-transition: background-color 0.4s ease;
+      transition: background-color 0.4s ease;
+
     }
   }
 }
@@ -88,6 +98,20 @@ h1, h2, h3, h4, h5{
       margin-right: 0px;
       padding-left: 0px;
       padding-right: 0px;
+    }
+  }
+}
+
+.navbar-collapse{
+  ul{
+    li{
+      ul{
+        li{
+          a{
+            padding: 5px 20px;
+          }
+        }
+      }
     }
   }
 }
@@ -175,7 +199,7 @@ hr{
 }
 
 .blue-navbar{
-  background-color: rgba(112, 108, 255, 1);
+  background-color: $navbar-blue;
   border: none;
   .white-right-border{
     border-right: thin solid white;
@@ -288,9 +312,19 @@ hr{
     li{
       a{
         color: #555555 !important;
+
+        -webkit-transition: background-color 0.4s ease;
+        -moz-transition: background-color 0.4s ease;
+        -o-transition: background-color 0.4s ease;
+        transition: background-color 0.4s ease;
         &:hover{
           color: black !important;
           background-color: #e2e2e2 !important;
+
+          -webkit-transition: background-color 0.4s ease;
+          -moz-transition: background-color 0.4s ease;
+          -o-transition: background-color 0.4s ease;
+          transition: background-color 0.4s ease;
         }
       }
     }
