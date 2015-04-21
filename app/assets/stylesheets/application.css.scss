@@ -20,6 +20,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
   
 $navbar-blue:       rgba(112, 108, 255, 1);
+$navbar-height:     50px;
 
 html, body{
   margin: 0;
@@ -33,6 +34,7 @@ html, body{
 
 .nav.navbar-nav.navbar-right{
   padding-right: 25px;
+
   li.active, li.dropdown{
     padding-top: 5px;
     padding-bottom: 5px;
@@ -68,6 +70,10 @@ html, body{
 
 h1, h2, h3, h4, h5{
   font-family: 'Roboto', sans-serif;
+}
+
+#full-content{
+  padding-top: $navbar-height;
 }
 
 #full-content, #full-header{
@@ -196,6 +202,12 @@ hr{
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+
+  position: fixed;
+  height: $navbar-height;
+  z-index: 500000;
+  width: 100%;
+  box-shadow: 3px 3px 3px 3px rgba(137, 137, 137, 0.38);
 }
 
 .blue-navbar{
