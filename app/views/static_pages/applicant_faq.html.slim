@@ -15,7 +15,10 @@
         .dropdown-line &nbsp; What are the start and end dates of the program this year?
       .later-display
         .new-faq-style-answer
-          p Students are expected to arrive between 10:00AM and 2:00PM on Sunday, June 28.  The final day is Saturday, August 1, and students must be fully moved out of the dorm before noon.
+          - if Time.now < Time.new(2016, 8, 1)
+            p Students are expected to arrive between 10:00AM and 2:00PM on Sunday, June 26.  The final day is Saturday, July 30, and students must be fully moved out of the dorm before noon.
+          - else
+            p Program dates for 2017 have not yet been determined, but students typically arrive on the last Sunday of June and depart exactly five weeks after.  Specific dates will be posted once they have been finalized.
 
     .new-faq-style-question data-answer="#answer-#{index}"
       - index += 1
