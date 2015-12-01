@@ -86,15 +86,23 @@
 
 br
 
-.row
-  .col-md-10.col-md-offset-1
-    .text-center
-      .alert.alert-success <b>Note:</b> The TA employment application is now available. Please <b>#{link_to "click here", "/counselor_description"}</b> to learn more about being a TA, or <b>#{link_to "click here", asset_path("ta_application_2016.pdf")}</b> to see the application directly.
+- if Time.now < Time.new(2016, 2, 1)
+  .row
+    .col-md-10.col-md-offset-1
+      .text-center
+        .alert.alert-info <b>Note:</b> The application form for PGSS 2016 has been approved.  Please <b>#{link_to "click here", asset_path("PGSS 2016 Application.pdf")}</b> to download.  The postmark deadline is <b>January 31, 2016</b>.
+- elsif Time.now < Time.new(2016, 4, 1)
+  .row
+    .col-md-10.col-md-offset-1
+      .text-center
+        .alert.alert-danger <b>Note:</b> The application period for this year's program has closed.  Good luck to all applicants - your decisions should arrive by mail no later than <b>April 15, 2016</b>.
 
-.row
-  .col-md-10.col-md-offset-1
-    .text-center
-      .alert.alert-warning <b>Note:</b> The application form for PGSS 2016 has not yet been approved. We are hopeful that it will be available <b>before the Thanksgiving holiday</b>. Please check back soon!
+- if Time.now < Time.new(2016, 4, 15)
+  .row
+    .col-md-10.col-md-offset-1
+      .text-center
+        .alert.alert-success <b>Note:</b> The TA employment application is now available. Please <b>#{link_to "click here", "/counselor_description"}</b> to learn more about being a TA, or <b>#{link_to "click here", asset_path("ta_application_2016.pdf")}</b> to see the application directly.
+
 
 br
 
@@ -121,7 +129,7 @@ br
   .col-md-5
     .homepage-column-header Our Supporters
 
-    p We gratefully acknowledge our co-sponsor, #{link_to "PGSS Campaign, Inc.", "http://www.pgsscampaign.org"}, alumni, parents, and friends of the Pennsylvania Governor's School for the Sciences who have generously provided funds to match the grant from the Pennsylvania Department of Education, making this year's PGSS program possible.  We also appreciate the support and assistance of the #{link_to "Mellon College of Science", "http://www.cmu.edu/mcs/"} and #{link_to "Carnegie Mellon University", "http://www.cmu.edu"}, both of whom have worked with the program since its inception in 1982.
+    p We gratefully acknowledge our co-sponsor, #{link_to "PGSS Campaign, Inc.", "http://www.pgsscampaign.org"}, alumni, parents, and friends of the Pennsylvania Governor's School for the Sciences who have generously provided funds to make this year's PGSS program possible.  We also appreciate the support and assistance of the #{link_to "Mellon College of Science", "http://www.cmu.edu/mcs/"} and #{link_to "Carnegie Mellon University", "http://www.cmu.edu"}, both of whom have worked with the program since its inception in 1982.
 
     p PGSS is an Institutional Member of the #{link_to "National Conference of Governor's Schools", "http://www.ncogs.org/"}.
 

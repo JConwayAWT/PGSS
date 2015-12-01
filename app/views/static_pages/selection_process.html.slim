@@ -20,7 +20,10 @@
 
 .row
   .col-md-10.col-md-offset-1
-    | The application form for PGSS 2016 has not yet been approved. We are hopeful that it will be available <b>before the Thanksgiving holiday</b>. Please check back soon!
+    - if Time.now < Time.new(2016, 2, 1)
+      | The application form for PGSS 2016 has been approved and is available for download by <b>#{link_to "clicking here", asset_path("PGSS 2016 Application.pdf")}</b>.  The postmark date for this year's program is <b>January 31, 2016</b>.
+    - else
+      | The application window for this year has closed.  The application for the 2017 program will be released in late 2016.  Please check back then!
 
     hr
     
