@@ -16,14 +16,14 @@
 
 .row
   .col-md-10.col-md-offset-1
-    h2 PGSS 2017 Application
+    h2 PGSS 2018 Application
 
 .row
   .col-md-10.col-md-offset-1
-    - if Time.now < Time.new(2017, 2, 16)
-      | The application form for PGSS 2017 has been approved and is available for download by <b>#{link_to "clicking here", asset_path("PGSS 2017 Application.pdf")}</b>.  The postmark date for this year's program is <b>February 15, 2017</b>.
+    - if Time.now < Time.new(2018, 2, 1)
+      | The application form for PGSS 2018 has been approved and is available at #{link_to "our application website", "pgss-applications.pa-gov-schools.org"}.  The submission deadline in <b>January 31st, 2018</b> at 11:59:59PM.
     - else
-      | The application window for this year has closed.  The application for the 2018 program will be released in late 2017.  Please check back then!
+      | The application window for this year has closed.  The application for the 2019 program will be released in late 2018.  Please check back then!
 
     hr
     
