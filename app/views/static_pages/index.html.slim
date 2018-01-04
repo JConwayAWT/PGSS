@@ -98,11 +98,11 @@ br
       .text-center
         .alert.alert-danger <b>Note:</b> The application period for this year's program has closed.  Good luck to all applicants!  Your decisions should arrive by mail no later than <b>April 15, 2018</b>.
 
-- if Time.now < Time.new(2017, 4, 15)
+- if Time.now < Time.new(2018, 4, 15)
   .row
     .col-md-10.col-md-offset-1
       .text-center
-        .alert.alert-success <b>Note:</b> The TA employment application is now available. Please <b>#{link_to "click here", "/counselor_description"}</b> to learn more about being a TA, or <b>#{link_to "click here", asset_path("ta_application_2017.pdf")}</b> to see the application directly.
+        .alert.alert-success <b>Note:</b> The TA employment application is now available. Please <b>#{link_to "click here", "/counselor_description"}</b> to learn more about being a TA, or <b>#{link_to "click here", asset_path("ta_application_2018.pdf")}</b> to see the application directly.  We are also accepting applications for the <b>#{link_to "Residence Life Director", asset_path("2018_rld_application.pdf")}</b> position.
 
 
 br
