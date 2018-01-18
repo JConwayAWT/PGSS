@@ -5,7 +5,7 @@ class StaticPagesController < ApplicationController
 
   def program_overview
   end
-  
+
   def selection_process
   end
 
@@ -13,6 +13,9 @@ class StaticPagesController < ApplicationController
   end
 
   def how_to_apply
+  end
+
+  def important_dates
   end
 
   def applicant_faq
