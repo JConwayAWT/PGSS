@@ -4,7 +4,7 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.2'
 # Use sqlite3 as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 0.21'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -23,12 +23,13 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'spring',        group: :development
+gem 'execjs'
 gem 'therubyracer', platforms: :ruby
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'escape'
 gem 'slim'
 gem 'bootstrap-sass', '~> 3.2.0'
-gem 'autoprefixer-rails'
+gem 'autoprefixer-rails', '~> 7.2.5'
 gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
