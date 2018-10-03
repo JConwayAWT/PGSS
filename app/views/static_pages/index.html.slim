@@ -86,13 +86,13 @@
 
 br
 
-- if Time.now < Time.new(2018, 2, 1)
+- if Time.now < Time.new(2019, 2, 1)
   .row
     .col-md-10.col-md-offset-1
       .text-center
         .alert.alert-info
-          p style="font-size: 16px" <b>Note:</b> The application portal for PGSS 2018 is now open.  Please <b>#{link_to "click here", "https://pgss-applications.pa-gov-schools.org", target: "_blank"}</b> to begin.  Applications must be submitted on or before <b>January 31<b>st</b>, 2018</b>.
-- elsif Time.now < Time.new(2018, 3, 15)
+          p style="font-size: 16px" <b>Note:</b> The application portal for PGSS 2018 is now open.  Please <b>#{link_to "click here", "https://pgss-applications.pa-gov-schools.org", target: "_blank", style: "font-size: 16px"}</b> to begin.  Applications must be submitted on or before <b>January 31<b>st</b>, 2019</b>.
+- elsif Time.now < Time.new(2019, 3, 15)
   .row
     .col-md-10.col-md-offset-1
       .text-center
