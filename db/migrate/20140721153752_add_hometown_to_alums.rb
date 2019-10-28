@@ -1,4 +1,4 @@
-class AddHometownToAlums < ActiveRecord::Migration
+class AddHometownToAlums < ActiveRecord::Migration[5.2]
   def change
     change_table :alums do |t|
       t.string :hometown

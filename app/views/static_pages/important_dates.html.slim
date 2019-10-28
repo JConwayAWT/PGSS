@@ -1,9 +1,7 @@
-- index = 0
-
 .row
   .col-md-12
     .text-center
-      h1.faq-headline Important Dates (2020)
+      h1.faq-headline Important Dates (#{APPLICATION_YEAR})
 
 .row
   .col-md-6.col-md-offset-3
@@ -16,33 +14,33 @@
         tr
           td.text-right
             b Application deadline:
-          td January 31, 11:59PM
+          td #{WEEKDAY_MONTH_DAY_YEAR_TIME_OF_DUE_DATE}
         tr
           td.text-right
             b Application screening:
-          td February - March
+          td February & March #{APPLICATION_YEAR}
         tr
           td.text-right
             b Admission notifications:
-          td Early April
+          td On or before #{MONTH_DAY_YEAR_OF_DECISION_NOTIFICATION_DATE}
         tr
           td.text-right
-            b PGSS Opening (Move-in) Day:
-          td Sunday, June 30, 2019
+            b Student Move-in:
+          td #{WEEKDAY_MONTH_DAY_TIME_OF_MOVE_IN_DATE} (from 12:00PM to 4:00PM)
         tr
           td.text-right
             b Parents Visiting Weekend:
-          td Saturday, July 20 and Sunday, July 21, 2019
+          td #{WEEKDAY_DAY_MONTH_PARENTS_VISIT_SATURDAY_DATE} and #{WEEKDAY_DAY_MONTH_PARENTS_VISIT_SUNDAY_DATE}, #{APPLICATION_YEAR}
         tr
           td.text-right
             b Scientific Symposium:
-          td Thursday, August 1 (afternoon), and Friday, August 2 (morning), 2019
+          td #{WEEKDAY_DAY_MONTH_SYMPOSIUM_THURSDAY_DATE} (afternoon), and #{WEEKDAY_DAY_MONTH_SYMPOSIUM_FRIDAY_DATE} (morning), #{APPLICATION_YEAR}
         tr
           td.text-right
-            b Closing Ceremony:
-          td Friday, August 2 (evening), 2019
+            b Closing Ceremony / Program End:
+          td #{WEEKDAY_DAY_MONTH_SYMPOSIUM_FRIDAY_DATE} (evening), #{APPLICATION_YEAR}
         tr
           td.text-right
-            b PGSS Move-out Day:
-          td Saturday, August 3, 2019
+            b PGSS Move-out Deadline:
+          td #{WEEKDAY_MONTH_DAY_TIME_OF_MOVE_OUT_DEADLINE_LINE}
 
