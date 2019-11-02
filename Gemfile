@@ -30,7 +30,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'escape'
 gem 'slim'
-gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'puma'
 # gem 'autoprefixer-rails', '~> 7.2.5'
 # gem 'rails_12factor', group: :production
