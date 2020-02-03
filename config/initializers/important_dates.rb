@@ -12,6 +12,7 @@ SYMPOSIUM_THURSDAY_DATE          = Time.new(2020, 7, 30, 12, 0, 0)
 SYMPOSIUM_FRIDAY_DATE            = Time.new(2020, 7, 31, 12, 0, 0)
 MOVE_OUT_DEADLINE_DATE           = Time.new(2020, 8, 1, 12, 0, 0)
 APPLICATION_YEAR                 = 2020
+APPLICATION_NEXT_YEAR            = 2021
 
 # example: "Thursday, January 31, 11:59PM"
 WEEKDAY_MONTH_DAY_TIME_OF_DUE_DATE = EXPOSED_DUE_DATE.strftime("%A, %B %-d, %I:%M%p")
@@ -21,6 +22,9 @@ WEEKDAY_MONTH_DAY_YEAR_TIME_OF_DUE_DATE = EXPOSED_DUE_DATE.strftime("%A, %B %-d,
 
 # example: January 31, 2020
 MONTH_DAY_YEAR_OF_DUE_DATE = EXPOSED_DUE_DATE.strftime("%B %-d, %Y")
+
+# example: January 31
+MONTH_DAY_OF_DUE_DATE = EXPOSED_DUE_DATE.strftime("%B %-d")
 
 
 

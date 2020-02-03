@@ -10,20 +10,20 @@
 
 .row
   .col-md-10.col-md-offset-1
-    | Academically talented high school students who are residents of the Commonwealth of Pennsylvania and are current juniors at the time of the application deadline may apply to the Pennsylvania Governor's School for the Sciences. Applicants will be expected to demonstrate academic achievement, interest in the sciences and mathematics, and a record of pursuing this interest in activities beyond the classroom. Applications postmarked after this date will not be considered.
+    | Academically talented high school students who are residents of the Commonwealth of Pennsylvania and are current juniors at the time of the application deadline may apply to the Pennsylvania Governor's School for the Sciences. Applicants will be expected to demonstrate academic achievement, interest in the sciences and mathematics, and a record of pursuing this interest in activities beyond the classroom.
 
     hr
 
 .row
   .col-md-10.col-md-offset-1
-    h2 PGSS 2020 Application
+    h2 PGSS #{APPLICATION_YEAR} Application
 
 .row
   .col-md-10.col-md-offset-1
-    - if Time.now < Time.new(2020, 2, 1)
-      | The application form for PGSS 2020 has been approved and is available at #{link_to "our application website", "https://pgss-applications.pa-gov-schools.org"}.  The submission deadline is now <b>January 31, 2020</b> at 11:59:59PM.
+    - if Time.now < EXPOSED_DUE_DATE
+      | The application form for PGSS #{APPLICATION_YEAR} has been approved and is available at #{link_to "our application website", "https://pgss-applications.pa-gov-schools.org"}.  The submission deadline is now #{WEEKDAY_MONTH_DAY_YEAR_TIME_OF_DUE_DATE}. Applications postmarked after this date will not be considered.
     - else
-      | The application window for this year has closed.  The application for the 2021 program will be released in late 2020.  Please check back then!
+      | The application window for this year has closed.  The application for the #{APPLICATION_NEXT_YEAR} program will be released in late #{APPLICATION_YEAR}.  Please check back then!
 
     hr
     
@@ -33,7 +33,7 @@
 
 .row
   .col-md-10.col-md-offset-1
-    p The PGSS Student Application Form will be made available in mid-October, with an application deadline of January 31. The application consists of four parts. The applicant completes the personal data form, attaching essays. Two teachers, a science teacher and a mathematics teacher, complete reference forms. The applicant's guidance counselor completes a recommendation form and attaches the student's transcript, attendance record, and test scores and class standing, if available.
+    p The PGSS Student Application Form will be made available in mid-October, with an application deadline of #{MONTH_DAY_OF_DUE_DATE}. The application consists of four parts. The applicant completes the personal data form, attaching essays. Two teachers, a science teacher and a mathematics teacher, complete reference forms. The applicant's guidance counselor completes a recommendation form and attaches the student's transcript, attendance record, and test scores and class standing, if available.
 
     p PGSS typically receives over 500 applications each year from students with excellent academic records, evidence of sustained interest and outstanding performance in science and mathematics, and high standardized test scores. Participants will be chosen from the pool of qualified applicants from all across the state. The competition is very intense. A selection panel, comprised of PGSS administration, Carnegie Mellon University faculty, and state education officials, convenes to read the applications. All parts of the application are taken into account, with emphasis on the student's written expression and ideas conveyed through the essays, as well as the transcript. The teacher and counselor forms are read for evidence of the student's daily work habits, attitudes, curiosity, independence, and reliability.
 
