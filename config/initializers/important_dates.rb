@@ -1,9 +1,12 @@
-SERVER_TIME_APPLICATION_DUE_DATE    = Time.new(2020, 2, 1, 5, 0)
-EXPOSED_DUE_DATE                    = Time.new(2020, 1, 31, 23, 59, 59)
+SERVER_TIME_APPLICATION_DUE_DATE    = Time.new(2020, 2, 15, 5, 0)
+EXPOSED_DUE_DATE                    = Time.new(2020, 2, 14, 23, 59, 59)
+
 DECISION_DATE                       = Time.new(2020, 3, 31, 5, 0, 0)
 DECISION_NOTIFICATION_DATE          = Time.new(2020, 4, 15, 17, 0, 0)
+
 COUNSELOR_APPLICATION_DEADLINE_DATE = Time.new(2020, 4, 15, 0, 0)
 COUNSELOR_APPLICATION_START_DATE    = Time.new(2020, 1, 1, 0, 0)
+
 ACCEPTANCE_DATE                     = Time.new(2020, 5, 1, 12, 0, 0)
 PROGRAM_START_DATE                  = Time.new(2020, 6, 29, 9, 0, 0)
 MOVE_IN_DATE                        = Time.new(2020, 6, 28, 12, 0, 0)
@@ -13,6 +16,7 @@ PROGRAM_END_DATE                    = Time.new(2020, 7, 31, 18, 0, 0)
 SYMPOSIUM_THURSDAY_DATE             = Time.new(2020, 7, 30, 12, 0, 0)
 SYMPOSIUM_FRIDAY_DATE               = Time.new(2020, 7, 31, 12, 0, 0)
 MOVE_OUT_DEADLINE_DATE              = Time.new(2020, 8, 1, 12, 0, 0)
+
 APPLICATION_YEAR                    = 2020
 APPLICATION_NEXT_YEAR               = 2021
 
