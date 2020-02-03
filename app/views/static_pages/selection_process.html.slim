@@ -21,7 +21,7 @@
 .row
   .col-md-10.col-md-offset-1
     - if Time.now > APPLICATION_OPEN_DATE and Time.now < EXPOSED_DUE_DATE
-      | The application form for PGSS #{APPLICATION_YEAR} has been approved and is available at #{link_to "our application website", "https://pgss-applications.pa-gov-schools.org"}.  The submission deadline is now #{WEEKDAY_MONTH_DAY_YEAR_TIME_OF_DUE_DATE}. Applications postmarked after this date will not be considered.
+      | The application form for PGSS #{APPLICATION_YEAR} has been approved and is available at #{link_to "our application website", "https://pgss-applications.pa-gov-schools.org"}.  The submission deadline is now #{WEEKDAY_MONTH_DAY_YEAR_TIME_OF_DUE_DATE}. Applications submitted after this date will not be considered.
     - else
       | The application window for this year has closed.  The application for the #{APPLICATION_NEXT_YEAR} program will be released in late #{APPLICATION_YEAR}.  Please check back then!
 
