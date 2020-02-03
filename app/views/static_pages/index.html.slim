@@ -92,7 +92,6 @@ br
       .text-center
         .alert.alert-info
           p style="font-size: 16px" <b>Note:</b> The application portal for PGSS #{APPLICATION_YEAR} is now open.  Please <b>#{link_to "click here", "https://pgss-applications.pa-gov-schools.org", target: "_blank", style: "font-size: 16px"}</b> to begin.  Applications must be submitted on or before #{MONTH_DAY_YEAR_OF_DUE_DATE}.
-}
 - elsif Time.now > EXPOSED_DUE_DATE and Time.now < DECISION_DATE
   .row
     .col-md-10.col-md-offset-1
