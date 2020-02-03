@@ -86,7 +86,7 @@
 
 br
 
-- if Time.now > EXPOSED_DUE_DATE
+- if Time.now > APPLICATION_OPEN_DATE and Time.now < EXPOSED_DUE_DATE
   .row
     .col-md-10.col-md-offset-1
       .text-center
