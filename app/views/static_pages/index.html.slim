@@ -86,19 +86,20 @@
 
 br
 
-- if Time.now < Time.new(2020, 2, 1)
+- if Time.now < EXPOSED_DUE_DATE
   .row
     .col-md-10.col-md-offset-1
       .text-center
         .alert.alert-info
-          p style="font-size: 16px" <b>Note:</b> The application portal for PGSS 2020 is now open.  Please <b>#{link_to "click here", "https://pgss-applications.pa-gov-schools.org", target: "_blank", style: "font-size: 16px"}</b> to begin.  Applications must be submitted on or before <b>January 31, 2020</b>.
-- elsif Time.now < Time.new(2020, 3, 15)
+          p style="font-size: 16px" <b>Note:</b> The application portal for PGSS #{APPLICATION_YEAR} is now open.  Please <b>#{link_to "click here", "https://pgss-applications.pa-gov-schools.org", target: "_blank", style: "font-size: 16px"}</b> to begin.  Applications must be submitted on or before #{MONTH_DAY_YEAR_OF_DUE_DATE}.
+}
+- elsif Time.now < DECISION_DATE
   .row
     .col-md-10.col-md-offset-1
       .text-center
-        .alert.alert-danger <b>Note:</b> The application period for this year's program has closed.  Good luck to all applicants!  Your decisions should arrive by mail no later than <b>April 15, 2020</b>.
+        .alert.alert-danger <b>Note:</b> The application period for this year's program has closed.  Good luck to all applicants!  Your decisions should arrive by mail no later than <b>#{MONTH_DAY_YEAR_OF_DECISION_NOTIFICATION_DATE}</b>.
 
-- if Time.now < Time.new(2020, 4, 15)
+- if Time.now < DECISION_DATE
   .row
     .col-md-10.col-md-offset-1
       .text-center
