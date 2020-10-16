@@ -9,14 +9,14 @@ COUNSELOR_APPLICATION_DEADLINE_DATE = Time.new(2021, 4, 15, 0, 0)
 COUNSELOR_APPLICATION_START_DATE    = Time.new(2021, 1, 1, 0, 0)
 
 ACCEPTANCE_DATE                     = Time.new(2021, 5, 1, 12, 0, 0)
-PROGRAM_START_DATE                  = Time.new(2021, 6, 28, 9, 0, 0)
-MOVE_IN_DATE                        = Time.new(2021, 6, 27, 12, 0, 0)
-PARENTS_VISIT_SATURDAY_DATE         = Time.new(2021, 7, 17, 17, 0, 0)
-PARENTS_VISIT_SUNDAY_DATE           = Time.new(2021, 7, 18, 17, 0, 0)
-PROGRAM_END_DATE                    = Time.new(2021, 7, 30, 18, 0, 0)
-SYMPOSIUM_THURSDAY_DATE             = Time.new(2021, 7, 29, 12, 0, 0)
-SYMPOSIUM_FRIDAY_DATE               = Time.new(2021, 7, 30, 12, 0, 0)
-MOVE_OUT_DEADLINE_DATE              = Time.new(2021, 7, 31, 12, 0, 0)
+PROGRAM_START_DATE                  = Time.new(2021, 6, 28, 9, 0, 0) + 7.days
+MOVE_IN_DATE                        = Time.new(2021, 6, 27, 12, 0, 0) + 7.days
+PARENTS_VISIT_SATURDAY_DATE         = Time.new(2021, 7, 17, 17, 0, 0) + 7.days
+PARENTS_VISIT_SUNDAY_DATE           = Time.new(2021, 7, 18, 17, 0, 0) + 7.days
+PROGRAM_END_DATE                    = Time.new(2021, 7, 30, 18, 0, 0) + 7.days
+SYMPOSIUM_THURSDAY_DATE             = Time.new(2021, 7, 29, 12, 0, 0) + 7.days
+SYMPOSIUM_FRIDAY_DATE               = Time.new(2021, 7, 30, 12, 0, 0) + 7.days
+MOVE_OUT_DEADLINE_DATE              = Time.new(2021, 7, 31, 12, 0, 0) + 7.days
 
 APPLICATION_YEAR                    = 2021
 APPLICATION_NEXT_YEAR               = 2022

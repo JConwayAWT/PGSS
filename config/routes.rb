@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   match '/applicant_faq', to: "static_pages#applicant_faq", via: :get
   match '/accepted_faq', to: "static_pages#accepted_faq", via: :get
-  match '/parent_faq', to: "static_pages#parent_faq", via: :get
+  match '/adult_faq', to: "static_pages#parent_faq", via: :get
   match '/important_dates', to: "static_pages#important_dates", via: :get
 
   match '/alumni/find_by_iu', to: "static_pages#find_by_iu", via: :get
