@@ -1,4 +1,4 @@
-APPLICATION_OPEN_DATE               = Time.new(2021, 10, 1, 0, 0, 0)
+APPLICATION_OPEN_DATE               = Time.new(2020, 10, 1, 0, 0, 0)
 SERVER_TIME_APPLICATION_DUE_DATE    = Time.new(2021, 2, 1, 5, 0, 0)
 EXPOSED_DUE_DATE                    = Time.new(2021, 1, 31, 23, 59, 59)
 
