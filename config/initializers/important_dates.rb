@@ -1,25 +1,25 @@
-APPLICATION_OPEN_DATE               = Time.new(2020, 10, 1, 0, 0, 0)
-SERVER_TIME_APPLICATION_DUE_DATE    = Time.new(2021, 2, 1, 5, 0, 0)
-EXPOSED_DUE_DATE                    = Time.new(2021, 2, 1, 23, 59, 59)
+APPLICATION_OPEN_DATE               = Time.new(2021, 10, 1, 0, 0, 0)
+SERVER_TIME_APPLICATION_DUE_DATE    = Time.new(2022, 2, 1, 8, 0, 0)
+EXPOSED_DUE_DATE                    = Time.new(2022, 1, 31, 23, 59, 59)
 
-DECISION_DATE                       = Time.new(2021, 4, 8 , 5, 0, 0)
-DECISION_NOTIFICATION_DATE          = Time.new(2021, 4, 15, 17, 0, 0)
+DECISION_DATE                       = Time.new(2022, 3, 28 , 5, 0, 0)
+DECISION_NOTIFICATION_DATE          = Time.new(2022, 4, 15, 17, 0, 0)
 
-COUNSELOR_APPLICATION_DEADLINE_DATE = Time.new(2021, 4, 15, 0, 0)
-COUNSELOR_APPLICATION_START_DATE    = Time.new(2021, 1, 1, 0, 0)
+COUNSELOR_APPLICATION_DEADLINE_DATE = Time.new(2022, 4, 15, 0, 0)
+COUNSELOR_APPLICATION_START_DATE    = Time.new(2022, 1, 1, 0, 0)
 
-ACCEPTANCE_DATE                     = Time.new(2021, 5, 1, 12, 0, 0)
-PROGRAM_START_DATE                  = Time.new(2021, 6, 28, 9, 0, 0) + 7.days
-MOVE_IN_DATE                        = Time.new(2021, 6, 27, 12, 0, 0) + 7.days
-PARENTS_VISIT_SATURDAY_DATE         = Time.new(2021, 7, 17, 17, 0, 0) + 7.days
-PARENTS_VISIT_SUNDAY_DATE           = Time.new(2021, 7, 18, 17, 0, 0) + 7.days
-PROGRAM_END_DATE                    = Time.new(2021, 7, 30, 18, 0, 0) + 7.days
-SYMPOSIUM_THURSDAY_DATE             = Time.new(2021, 7, 29, 12, 0, 0) + 7.days
-SYMPOSIUM_FRIDAY_DATE               = Time.new(2021, 7, 30, 12, 0, 0) + 7.days
-MOVE_OUT_DEADLINE_DATE              = Time.new(2021, 7, 31, 12, 0, 0) + 7.days
+ACCEPTANCE_DATE                     = Time.new(2022, 5, 1, 12, 0, 0)
+PROGRAM_START_DATE                  = Time.new(2022, 6, 26, 9, 0, 0)
+MOVE_IN_DATE                        = Time.new(2022, 6, 25, 12, 0, 0)
+PARENTS_VISIT_SATURDAY_DATE         = Time.new(2022, 7, 15, 17, 0, 0)
+PARENTS_VISIT_SUNDAY_DATE           = Time.new(2022, 7, 16, 17, 0, 0)
+PROGRAM_END_DATE                    = Time.new(2022, 7, 28, 18, 0, 0)
+SYMPOSIUM_THURSDAY_DATE             = Time.new(2022, 7, 27, 12, 0, 0)
+SYMPOSIUM_FRIDAY_DATE               = Time.new(2022, 7, 28, 12, 0, 0)
+MOVE_OUT_DEADLINE_DATE              = Time.new(2022, 7, 29, 12, 0, 0)
 
-APPLICATION_YEAR                    = 2021
-APPLICATION_NEXT_YEAR               = 2022
+APPLICATION_YEAR                    = 2022
+APPLICATION_NEXT_YEAR               = 2023
 
 # example: "Thursday, January 31, 11:59PM"
 WEEKDAY_MONTH_DAY_TIME_OF_DUE_DATE = EXPOSED_DUE_DATE.strftime("%A, %B %-d, %I:%M%p")
