@@ -32,7 +32,6 @@ gem 'escape'
 gem 'slim'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'puma'
-gem 'mimemagic', '~> 0.4.3'
 # gem 'autoprefixer-rails', '~> 7.2.5'
 # gem 'rails_12factor', group: :production
 
