@@ -18,6 +18,8 @@ SYMPOSIUM_THURSDAY_DATE             = Time.new(2022, 7, 28, 12, 0, 0)
 SYMPOSIUM_FRIDAY_DATE               = Time.new(2022, 7, 29, 12, 0, 0)
 MOVE_OUT_DEADLINE_DATE              = Time.new(2022, 7, 30, 12, 0, 0)
 
+COUNSELOR_JOB_AD_END_DATE           = Time.new(2022, 4, 15, 23, 59, 59)
+
 APPLICATION_YEAR                    = 2022
 APPLICATION_NEXT_YEAR               = 2023
 
