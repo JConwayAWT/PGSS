@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-ruby '2.6.5'
-gem 'bundler', '2.0.2'
+ruby '2.7.2'
+gem 'bundler'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
@@ -26,12 +26,12 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'spring',        group: :development
 gem 'execjs'
-gem 'therubyracer', platforms: :ruby
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'escape'
 gem 'slim'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'puma'
+gem 'mimemagic'
 # gem 'autoprefixer-rails', '~> 7.2.5'
 # gem 'rails_12factor', group: :production
 
