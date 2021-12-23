@@ -1,0 +1,2 @@
+module FrontPageNotificationsHelper
+end

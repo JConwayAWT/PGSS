@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_22_225840) do
+ActiveRecord::Schema.define(version: 2021_12_23_005449) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,15 @@ ActiveRecord::Schema.define(version: 2021_12_22_225840) do
     t.datetime "counselor_job_ad_end_date"
     t.integer "application_year"
     t.integer "application_next_year"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "front_page_notifications", force: :cascade do |t|
+    t.text "message"
+    t.text "color"
+    t.datetime "start_at"
+    t.datetime "end_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  message: MyText
+  color: MyText
+  start_at: 2021-12-22 19:54:49
+  end_at: 2021-12-22 19:54:49
+
+two:
+  message: MyText
+  color: MyText
+  start_at: 2021-12-22 19:54:49
+  end_at: 2021-12-22 19:54:49

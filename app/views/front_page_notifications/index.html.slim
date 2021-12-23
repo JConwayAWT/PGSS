@@ -1,0 +1,31 @@
+br
+br
+
+.row
+  .col-md-8.col-md-offset-2
+    h1.text-center Front-page Notifications
+    br
+    table.table.table-striped
+      thead
+        tr
+          th Message
+          th Color type
+          th Start at
+          th End at
+          th
+          th
+
+      tbody
+        - @front_page_notifications.each do |front_page_notification|
+          tr
+            td = front_page_notification.message.truncate(36)
+            td = front_page_notification.color
+            td = front_page_notification.start_at
+            td = front_page_notification.end_at
+            td = link_to 'Edit', edit_front_page_notification_path(front_page_notification)
+            td = link_to 'Destroy', front_page_notification, data: { confirm: 'Are you sure?' }, method: :delete
+
+    br
+
+    = button_to 'New Front page notification', new_front_page_notification_path, method: :get, class: "btn btn-success"
+
