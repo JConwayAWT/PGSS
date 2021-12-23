@@ -92,7 +92,7 @@ br
     .row
       .col-md-10.col-md-offset-1
         .text-center
-          div class="covid-alertalert alert-#{fpn.color}"
+          div class="alert alert-#{fpn.color}"
             = fpn.message.html_safe
 
 - if Time.now > DateConfig.APPLICATION_OPEN_DATE and Time.now < DateConfig.EXPOSED_DUE_DATE
