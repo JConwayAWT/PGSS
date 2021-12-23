@@ -8,7 +8,7 @@
 
   .form-group
     = f.label :message
-    = f.text_area :message, class: "form-control", rows: 6, placeholder: "Note! This accepts basic HTML, such as <b>bold</b> and <i>italics</i> and <u>underline</u>"
+    = f.text_area :message, class: "form-control", rows: 6, placeholder: "Note! This accepts basic HTML, such as <b>bold</b> and <i>italics</i> and <u>underline</u>.  If you include a link, you MUST give a complete address with http or https, <a href='https://www.google.com'>like this!</a>"
   .form-group
     = f.label :color
     = f.select :color, [["Red", "danger"], ["Yellow", "warning"], ["Green", "success"], ["Blue", "info"]], {}, class: "form-control"
