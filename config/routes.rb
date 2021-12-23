@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :date_configs
+  devise_for :users, skip: [:registrations]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -8,6 +10,7 @@ Rails.application.routes.draw do
 
   match '/index', to: "static_pages#index", via: :get
   match '/journals', to: "static_pages#journals", via: :get
+  match '/admin_tools', to: "static_pages#admin_tools", via: :get
 
   match '/program_overview', to: "static_pages#program_overview", via: :get
   match '/selection_process', to: "static_pages#selection_process", via: :get

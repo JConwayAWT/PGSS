@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+  before_action :authenticate_user!, only: [:admin_tools]
 
   def index
   end
@@ -31,6 +32,9 @@ class StaticPagesController < ApplicationController
   end
 
   def journals
+  end
+
+  def admin_tools
   end
 
 end

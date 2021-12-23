@@ -1,0 +1,227 @@
+<%= form_with(model: date_config, local: true) do |form| %>
+  <% if date_config.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(date_config.errors.count, "error") %> prohibited this date_config from being saved:</h2>
+
+      <ul>
+      <% date_config.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :application_open_date %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :application_open_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :server_time_application_due_date, "Actual application cut-off time" %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :server_time_application_due_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :exposed_due_date, "Stated application cut-off time" %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :exposed_due_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :decision_date %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :decision_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :decision_notification_date %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :decision_notification_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :counselor_application_start_date %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :counselor_application_start_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :counselor_application_deadline_date %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :counselor_application_deadline_date %>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :acceptance_date, "Date to accept offer of admission by" %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :acceptance_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :program_start_date %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :program_start_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :move_in_date %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :move_in_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :parents_visit_saturday_date %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :parents_visit_saturday_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :parents_visit_sunday_date %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :parents_visit_sunday_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :program_end_date %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :program_end_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :symposium_thursday_date %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :symposium_thursday_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :symposium_friday_date %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :symposium_friday_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :move_out_deadline_date %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :move_out_deadline_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :counselor_job_ad_end_date %>
+      </div>
+      <div class="col-md-6">
+        <%= form.datetime_select :counselor_job_ad_end_date %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :application_year %>
+      </div>
+      <div class="col-md-6">
+        <%= form.number_field :application_year %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <%= form.label :application_next_year %>
+      </div>
+      <div class="col-md-6">
+        <%= form.number_field :application_next_year %>
+      </div>
+    </div>
+  </div>
+
+  <div class="actions text-center">
+    <%= form.submit "Update dates", class: "btn btn-primary" %>
+  </div>
+<% end %>

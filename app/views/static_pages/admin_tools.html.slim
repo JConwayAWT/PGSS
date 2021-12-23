@@ -1,0 +1,12 @@
+.row
+  .col-md-12
+    .text-center
+      h1 Admin Tools
+
+.row
+  .col-md-4.col-md-offset-4
+    ul
+      li
+        = link_to "Manage important dates", edit_date_config_path(DateConfig.first)
+      li
+        = link_to "Manage front-page notifications", "www.google.com"

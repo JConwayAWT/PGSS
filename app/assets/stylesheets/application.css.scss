@@ -482,3 +482,21 @@ $negative-spacing-fix:  -14px;
 .faq-headline{
   padding-bottom: 25px;
 }
+
+.devise-notice{
+  background-color: #9898f4;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+}
+
+.devise-alert{
+  background-color: #f47878;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+}

@@ -86,12 +86,21 @@ html
                     a href="/journals" style="background-color: transparent;" Journals
                   li.active.donate-link
                     a href="http://www.pgssalumni.org/donate" style="background-color: transparent;" Donate
+                  - if current_user
+                    li.active
+                      = link_to "Admin Tools", admin_tools_path, style: "background-color: transparent"
+                    li.active
+                      = link_to "Sign Out", destroy_user_session_path, method: :delete, style: "background-color: transparent"
 
 
 
 
       #full-content
         .container-fluid#body-container
+          - if notice
+            p.devise-notice = notice
+          - if alert
+            p.devise-alert = alert
           = yield
 
       #full-footer
