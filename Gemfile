@@ -29,7 +29,7 @@ gem 'execjs'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'escape'
 gem 'slim'
-gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'puma'
 gem 'mimemagic'
 gem 'devise'
